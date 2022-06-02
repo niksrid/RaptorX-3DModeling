@@ -184,14 +184,14 @@ fi
 #extraCCMfile=${out_root}/relnam.extraCCM.pkl
 zscorefile=${out_root}/$relnam.ccmpred_zscore
 ## convert mpk file to pkl file
-python $DL4DistancePredHome/CCMpredUtils.py $mpkoutfile ${out_root}/
+python2 $DL4DistancePredHome/CCMpredUtils.py $mpkoutfile ${out_root}/
 if [ $? -ne 0 ]; then
 	echo "ERROR: failed to run python $DL4DistancePredHome/CCMpredUtils.py $mpkoutfile ${out_root}/"
         exit 1
 fi
 rm -f $mpkoutfile
 
-python $DistFeatureHome/bin/normalize_ccmpred_sep.py $txtoutfile > $zscorefile
+python2 $DistFeatureHome/bin/normalize_ccmpred_sep.py $txtoutfile > $zscorefile
 if [ $? -ne 0 ]; then
         echo "ERROR: failed to run python $bin/normalize_ccmpred_sep.py on $txtoutfile"
         exit 1
