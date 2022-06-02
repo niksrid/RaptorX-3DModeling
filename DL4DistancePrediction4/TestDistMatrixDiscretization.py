@@ -7,7 +7,7 @@ import DistanceUtils
 import cPickle
 
 def Usage():
-	print 'python TestDistMatrixDiscretization.py groundTruthFilePKL scheme'
+	print 'python2 TestDistMatrixDiscretization.py groundTruthFilePKL scheme'
 	print '	scheme: identitication for discretization distance bins, e.g., 13C, 14C, 47CPlus'
 	
 if len(sys.argv)<3:

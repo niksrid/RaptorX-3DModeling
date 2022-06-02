@@ -9,7 +9,7 @@ from DL4PropertyPrediction import PropertyUtils
 ## it takes information from a tplpkl file
 
 def Usage():
-	print 'python GenPropertyFeaturesFromTPLPKL.py tplpklFile'
+	print 'python2 GenPropertyFeaturesFromTPLPKL.py tplpklFile'
 	print '	This script generates property features and labels from a tpklpkl file'
 	print '	tplpklFile: the tplpkl file generated for template-based modeling'
 

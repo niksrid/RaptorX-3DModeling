@@ -9,7 +9,7 @@ from LoadHHM import load_hhm as LoadHHM
 ## this script checks if the following types of files have Xs in sequence: .hhm, .hhm.pkl, .tgt, .tgt.pkl, .tpl, .tpl.pkl
 
 def Usage():
-	print 'Usage: python CheckIfSequenceHasXs.py inputFile'
+	print 'Usage: python2 CheckIfSequenceHasXs.py inputFile'
 	print '	this script checks if the following types of files have Xs in sequence: .hhm, .hhm.pkl, .tgt, .tgt.pkl, .tpl, .tpl.pkl'
 	print '	if Xs are contained in the sequence, the file name will be printed out as well as the sequence'
 

@@ -55,7 +55,7 @@ def CalcRealLengths(sequences):
 		realLens.append(realLen)
 	return realLens
 
-##python code for weight calculation, which is slow
+##python2 code for weight calculation, which is slow
 def CalcSeqWeight(sequences):
 	numSeqs = len(sequences)
 	realLens = CalcRealLengths(sequences)
@@ -165,7 +165,7 @@ def CCalcPairwiseMatrix(sequences, weight=None, box=None, matrixType='covariance
 
 	return resultMatrix
 
-## python code for covariance calculation. This code shall not be used
+## python2 code for covariance calculation. This code shall not be used
 def CalcCovMatrix(sequences, seqWeights):
 	numSeqs = len(sequences)
 	print '#seqs in MSA: ', numSeqs

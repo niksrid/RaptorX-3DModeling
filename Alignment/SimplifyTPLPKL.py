@@ -4,7 +4,7 @@ import cPickle
 
 
 def Usage():
-	print 'python SimplifyTPLPKL.py infile_TPLPKL [outDir]'
+	print 'python2 SimplifyTPLPKL.py infile_TPLPKL [outDir]'
 	print '	This script simplifies a heavy-weight tpl.pkl file to a lightweight tpl.pkl file for threading'
 	print '	The heavy weight file is only needed for template-based distance/orientation prediction'
 	print '	infile: the input file ending with .tpl.pkl'

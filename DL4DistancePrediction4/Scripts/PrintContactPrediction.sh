@@ -30,11 +30,11 @@ if [ ! -d $ResDir ]; then
 fi
 
 program=$DL4DistancePredHome/PrintContactPrediction.py
-python $program -d $ResDir $inputfile
+python2 $program -d $ResDir $inputfile
 
 target=`basename $inputfile | cut -f1 -d'.'`
 
 currDir=`pwd`
 cd $ResDir
-python ${DL4DistancePredHome}/Utils/PlotContactMapByMatrix.py ${target}.CM.txt
+python2 ${DL4DistancePredHome}/Utils/PlotContactMapByMatrix.py ${target}.CM.txt
 cd $currDir

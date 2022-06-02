@@ -37,7 +37,7 @@ fi
 
 qualityFile=$ResDir/Quality-${modelFile}.txt
 CAqualityFile=$ResDir/CA.Quality-${modelFile}.txt
-python ${cmdDir}/EstimateModelError.py -o $qualityFile $targetModel $refListFile > /dev/null
+python2 ${cmdDir}/EstimateModelError.py -o $qualityFile $targetModel $refListFile > /dev/null
 
 rm -f $refListFile
 

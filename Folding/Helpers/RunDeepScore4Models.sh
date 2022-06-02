@@ -20,7 +20,7 @@ cp /dev/null $result
 
 for m in `cat $modelList`
 do
-        scores=`DeepScore $m $native | python $DistanceFoldingHome/Helpers/CollectModelQuality.py `
+        scores=`DeepScore $m $native | python2 $DistanceFoldingHome/Helpers/CollectModelQuality.py `
         echo $scores $m >> $result
 done
 

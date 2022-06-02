@@ -15,7 +15,7 @@ def HammingDiffOfTwoArrays(a1, a2):
 	return np.mean(diff)
 
 if len(sys.argv)<3:
-	print 'python CheckConsistency .tgt .tgt.pkl'
+	print 'python2 CheckConsistency .tgt .tgt.pkl'
 	exit(1)
 
 file1=sys.argv[1]

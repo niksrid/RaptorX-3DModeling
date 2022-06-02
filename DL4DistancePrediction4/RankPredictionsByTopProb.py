@@ -8,7 +8,7 @@ from ContactUtils import TopContactProbSum
 #import OrientationUtils
 
 def Usage():
-	print "python RankPredictionsByTopProb.py predFile1 predFile2 predFile3 ..."
+	print "python2 RankPredictionsByTopProb.py predFile1 predFile2 predFile3 ..."
 	print "	This script ranks the predicted dist/orientation matrices of one protein by top predicted contact probabilities"
 	print "	predFile: one predicted dist/orientation matrix file, ending with .predictedDistMatrix.pkl"
 	print "	the result is a ranking list of all predictions and their associated prob sums"

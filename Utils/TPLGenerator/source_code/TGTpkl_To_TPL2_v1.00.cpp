@@ -636,7 +636,7 @@ int main(int argc, char** argv)
 	}
 
 	//----- dump TPLPKL ------//
-	string Dump_CMD= "python " + home + "/util/DumpTPLPKL.py " + tplpkl + " " + tmpout + "/" + templateName + ".feature" + " " + tmpout + "/" + templateName + ".mapstr" ;
+	string Dump_CMD= "python2 " + home + "/util/DumpTPLPKL.py " + tplpkl + " " + tmpout + "/" + templateName + ".feature" + " " + tmpout + "/" + templateName + ".mapstr" ;
 	retv=system(Dump_CMD.c_str());
 	//load feature file
 	string feat_file= tmpout + "/" + templateName + ".feature";

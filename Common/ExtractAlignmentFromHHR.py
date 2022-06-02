@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 """
 extract alignments from the hhr result files created with hhblits|hhsearch|hhalign -o <hhr_file>
@@ -331,7 +331,7 @@ def FilterAlignments(hhrfile, query, savefolder, PDBClusterFile=None, Evalues=[0
 
 
 def Usage():
-	print 'python ExtractAlignmentFromHHR.py hhrfile query.hhm [-E Evalue | -I MaxSeqID | -c PDBClusterFile | -t templateListFile | -d savefolder | -n maxNumTemplatesPerQuery ]'
+	print 'python2 ExtractAlignmentFromHHR.py hhrfile query.hhm [-E Evalue | -I MaxSeqID | -c PDBClusterFile | -t templateListFile | -d savefolder | -n maxNumTemplatesPerQuery ]'
 	print ' This script extracts pairwise alignments from a .hhr file, mainly for training'
 	print '	-E: a list of Evalues (from small to large, separated by ,) for an alignment to be extracted, default 0.00001,0.001,0.1'
 	print '	-I: the max SeqID (0-1) between template and query allowed for an alignment to be extracted, default 1., i.e., output alignments of high seq id'

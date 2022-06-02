@@ -194,7 +194,7 @@ def CopyTemplateCoordinates(alignment, tpl, tgt, tplAtomCoordinates):
 	return copiedCoordinates
 
 ## create matrix for query sequence by copying from templateMatrix based upon seq2template mapping
-## templateMatrix: python dict() for a set of template matrices
+## templateMatrix: python2 dict() for a set of template matrices
 ## seq2templateMapping is a tuple of two entries. Each is a list of residue indices. The first is for seq and the 2nd for template. These two lists shall have same length
 ## for a sequence matrix, if it does not have corresponding entry in template, then its value is set to an invalid value
 
@@ -678,7 +678,7 @@ def ParseAlignmentFile(alignmentFile, savefolder=os.getcwd()):
 if __name__ == '__main__':
 
 	if len(sys.argv) < 4:
-		print 'python AlignmentUtils.py alnFile tgtFile tplFolder'
+		print 'python2 AlignmentUtils.py alnFile tgtFile tplFolder'
 		print '	this entrance is mainly used for test some feature generation methods'
 		print '	alnFile: a pairwise alignment file in FASTA format'
 		print '	tgtFile: a tgt file'

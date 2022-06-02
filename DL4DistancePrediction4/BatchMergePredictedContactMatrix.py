@@ -13,7 +13,7 @@ import getopt
 
 def Usage():
 
-    	print 'python BatchMergePredictedContactMatrix.py [-m method | -s fileSuffix | -g ground_truth_folder | -c ] poteinList PKL_folders'
+    	print 'python2 BatchMergePredictedContactMatrix.py [-m method | -s fileSuffix | -g ground_truth_folder | -c ] poteinList PKL_folders'
 	print '  This script builds contact prediction matrices for a list of proteins from their predicted contact or distance matrix files '
 	print '  -m: algorithm for merge, amean for arithmetic mean (default) and gmean for geometric mean'
     	print '  -s: suffix for the predicted dist matrix file, e.g., .predictedDistMatrix.pkl (default) or .fixedDistMatrix.pkl'
@@ -22,7 +22,7 @@ def Usage():
     	print '  PKL_folders: a list of folders containing predicted distance matrix files with name like XXX.predictedDistMatrix.pkl or XXX.fixedDistMatrix.pkl'
     	print '     An input distance matrix file contains a tuple of at least 6 items: name, primary sequence, predicted distance prob matrix, predicted contact prob matrix, labelWeights, reference probabilities'
 
-	print '  This script will output one or a few files. The resultant .predictedContactMatrix.pkl file is a python dictionary containing protein name, sequence and predicted contact matrix '
+	print '  This script will output one or a few files. The resultant .predictedContactMatrix.pkl file is a python2 dictionary containing protein name, sequence and predicted contact matrix '
         print '  If the -c option is used, the resultant .gcnn file is a contact matrix in text format.'
 
 def main(argv):

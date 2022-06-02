@@ -13,7 +13,7 @@ import numpy as np
 ## further, the first sequence in the a3m file shall be the query sequence under prediction
 
 def Usage():
-	print 'python SampleA3MByNumber.py inputFile numSeqs [savefile]'
+	print 'python2 SampleA3MByNumber.py inputFile numSeqs [savefile]'
 	print '	inputFile: an MSA file in a3m format'
 	print '	numSeqs: the number of sequences to be sampled. If <0 or > #seqs in input MSA, then output the input MSA as the result'
 	print '	savefile: the file for result saving'

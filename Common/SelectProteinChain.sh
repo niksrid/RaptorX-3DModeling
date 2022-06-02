@@ -34,9 +34,9 @@ chainName=`echo $proteinChain | cut -f2 -d'_' `
 pdbfile=${PDBDIR}/${pdbid}.pdb
 ciffile=${PDBDIR}/${pdbid}.cif
 if [ -f $pdbfile ]; then
-  	python $program ${pdbfile} $chainName $RESDIR &
+  	python2 $program ${pdbfile} $chainName $RESDIR &
 elif [ -f $ciffile ]; then 
-	python $program ${ciffile} $chainName $RESDIR &
+	python2 $program ${ciffile} $chainName $RESDIR &
 else
 	echo "ERROR: no structure file for chain $proteinChain"
 fi

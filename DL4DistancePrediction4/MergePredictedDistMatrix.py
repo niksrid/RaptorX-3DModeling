@@ -12,8 +12,8 @@ from config import ParseResponse
 import getopt
 
 def Usage():
-    	##print 'python MergePredictedDistMatrix.py [-m method | -g ground_truth_folder | -s savefile | -c ] pkl_files '
-    	print 'python MergePredictedDistMatrix.py [-m method | -g ground_truth_folder | -s savefile ] pkl_files'
+    	##print 'python2 MergePredictedDistMatrix.py [-m method | -g ground_truth_folder | -s savefile | -c ] pkl_files '
+    	print 'python2 MergePredictedDistMatrix.py [-m method | -g ground_truth_folder | -s savefile ] pkl_files'
 	print '	This script merges a list of predicted dist/orientation matrices for the same protein'
 	print '	-m: algorithm for merge, amean for arithmetic mean (default) and gmean for geometric mean'
 	print '	-g: the folder for ground truth. If provided, contact prediction accuracy will be calculated'

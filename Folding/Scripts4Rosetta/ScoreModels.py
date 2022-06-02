@@ -14,7 +14,7 @@ from ScoreOneModel import Score as ScoreOneModel
 from FoldNRelax import DeriveRosettaCSTFile, CheckCSTFile
 
 def Usage():
-	print 'python ScoreModels.py inputFolder cstFile [ -I extraInput | -s savefile]'
+	print 'python2 ScoreModels.py inputFolder cstFile [ -I extraInput | -s savefile]'
 	print '	inputFolder: a folder for all PDB files to be scored'
 	print '	cstFile: a Rosetta constraint file or a file for predicted distance/orientation probability in PKL format'
 	print ' -I: when this option specified, cstFile shall be interpreted as the predicted dist/orientation matrix file instead of Rosetta constraint file'

@@ -80,7 +80,7 @@ do
                 numRunningJobs=`ps -x | grep ${keywords} | grep -v ${myself} | wc -l  `
                 if [ $numRunningJobs -lt $numAllowedJobs ]; then
 			distFile=$inputFolder/${i}.predictedDistMatrix414C.pkl
-                        python $cmdDir/$program -a CbCb -s $savefolder $distFile &
+                        python2 $cmdDir/$program -a CbCb -s $savefolder $distFile &
 			sleep 1
                         break
 		else

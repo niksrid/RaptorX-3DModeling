@@ -13,7 +13,7 @@ from MergePredictedDistMatrix import MergeOneProtein
 
 def Usage():
 
-    	print 'python BatchMergePredictedDistMatrix.py [-m method | -s fileSuffix | -g ground_truth_folder | -d savefolder | -c ] proteinListFile predicteDistMatrix_folder1 predictedDistMatrix_folder2 ... '
+    	print 'python2 BatchMergePredictedDistMatrix.py [-m method | -s fileSuffix | -g ground_truth_folder | -d savefolder | -c ] proteinListFile predicteDistMatrix_folder1 predictedDistMatrix_folder2 ... '
 	print '  -m: specify merge method: amean for arithmetic mean (default) while gmean for geometric mean'
 	print '  -s: suffix for a predicted dist matrix file, e.g. .predictedDistMatrix.pkl (default) '
 	print '  -g: the folder for ground truth. If provided, contact prediction accuracy will be calculated'

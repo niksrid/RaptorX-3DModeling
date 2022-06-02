@@ -28,7 +28,7 @@ import gc
 import resource
 
 def Usage():
-    	print 'python RunPairwisePredictor.py -m modelfiles -p proteinName/nameFile/inputFeature_PKL -i featureFolders [-a aliFile/aliFolder] [-t tplFile/tplFolder] [-d save_folder] [-g ground_truth_folder]'
+    	print 'python2 RunPairwisePredictor.py -m modelfiles -p proteinName/nameFile/inputFeature_PKL -i featureFolders [-a aliFile/aliFolder] [-t tplFile/tplFolder] [-d save_folder] [-g ground_truth_folder]'
 	print '	This script predicts inter-atom distance and orientation for one or multiple proteins and optionally one or multiple pairwise query-template alignments'
     	print '  -m: one or multiple deep model files in PKL format, separated by semicolon'
 	print ' '

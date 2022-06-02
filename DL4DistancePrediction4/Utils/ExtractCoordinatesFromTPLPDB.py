@@ -20,7 +20,7 @@ from SelectAtoms import SelectCG, SelectCB
 ## The tpl file may be inconsistent with the PDB file, but we will extract coordinates from PDB file based upon the tpl file
 
 def Usage():
-	print 'python ExtractCoordinatesFromPDB.py tpl_file pdb_file'
+	print 'python2 ExtractCoordinatesFromPDB.py tpl_file pdb_file'
 
 def MapTPL2PDB((DSSPsequence, SEQRESsequence):
 	i=-1

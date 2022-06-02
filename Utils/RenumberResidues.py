@@ -2,7 +2,7 @@ import os
 import sys
 
 def Usage():
-	print 'python RenumberResidues.py pdbfile'
+	print 'python2 RenumberResidues.py pdbfile'
 	print '	This script renumbers the residues of a PDB file'
 
 if len(sys.argv) < 2:

@@ -5,7 +5,7 @@ import cPickle
 
 
 if len(sys.argv) < 2:
-	print 'Usage: python SublistCbCbByNames.py proteinList PKLfile1 PKLfile2 PKLfile3 ... '
+	print 'Usage: python2 SublistCbCbByNames.py proteinList PKLfile1 PKLfile2 PKLfile3 ... '
 	print '     This script outputs all records with protein names in proteinList. Only Cb-Cb atomDistMatrix is saved'
         print '     This script also outputs a subset of proteinList not in the PKL files'
 	exit(1)

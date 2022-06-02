@@ -77,7 +77,7 @@ bname=`basename $proteinListFile .list`
 bname=`basename $bname .txt`
 predFile=$ResultDir/$bname.propertyFeatures.pkl
 
-python $DL4PropertyPredHome/GenPropertyFeatures4Proteins.py $proteinListFile $hhmFolder $predFile
+python2 $DL4PropertyPredHome/GenPropertyFeatures4Proteins.py $proteinListFile $hhmFolder $predFile
 
 program=$DL4PropertyPredHome/RunPropertyPredictor.py
 if [ ! -f $program ]; then
@@ -93,9 +93,9 @@ if [ $ModelFiles == "" ]; then
         exit 1
 fi
 
-THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python $program -p $predFile -m $ModelFiles -d $ResultDir 
+THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python2 $program -p $predFile -m $ModelFiles -d $ResultDir 
 if [ $? -ne 0 ]; then
-	echo "ERROR: failed to run python $program -p $predFile -m $ModelFiles -d $ResultDir on $GPU"
+	echo "ERROR: failed to run python2 $program -p $predFile -m $ModelFiles -d $ResultDir on $GPU"
 	exit 1
 fi
 

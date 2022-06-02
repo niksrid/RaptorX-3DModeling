@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 Usage:  {prog} infile format outfile
         {prog} infile format

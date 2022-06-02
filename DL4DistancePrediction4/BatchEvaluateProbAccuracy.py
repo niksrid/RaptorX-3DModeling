@@ -13,7 +13,7 @@ import getopt
 
 def Usage():
 
-    	print 'python BatchEvaluateProbAccuracy.py poteinList predProbMatrix_folder ground_truth_folder [ -s minSeqSep]  [-c probCutoff for prediction] [ -d distCutoff for native]'
+    	print 'python2 BatchEvaluateProbAccuracy.py poteinList predProbMatrix_folder ground_truth_folder [ -s minSeqSep]  [-c probCutoff for prediction] [ -d distCutoff for native]'
 	print '  This script evaluate predicted dist prob accuracy for a list of proteins in their predicted dist matrix files '
     	print '  predProbMatrix_folder: a folder containing predicted distance prob with name like XXX.predictedDistMatrix.pkl'
     	print '     A predicted distance prob matrix file contains a tuple of 6 or 7 items: name, primary sequence, predDistProbMatrix, ...'

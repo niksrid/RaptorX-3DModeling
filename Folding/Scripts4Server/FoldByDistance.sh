@@ -158,7 +158,7 @@ cd $confold_server_home
 #================ Step 2. generate all relevant TBL files ==============#
 #-> 2.1 distance relevant TBL file
 #$bin/EstiDist_To_TBL $input_fasta $esti_dist $esti_dist $lower_std $upper_std $tmp/contact.tbl $sigma_value
-python $bin/ConvertDistBounds2CNSTBL.py -c $dist_cutoff -t $bound_type -g $sigma_value $input_fasta $dist_bound > $tmp/contact.tbl
+python2 $bin/ConvertDistBounds2CNSTBL.py -c $dist_cutoff -t $bound_type -g $sigma_value $input_fasta $dist_bound > $tmp/contact.tbl
 
 #-> 2.2 secondary structure relevant TBL files
 $bin/SSE_To_TBL $input_fasta $input_ss $tmp/ssnoe.tbl $tmp/dihedral.tbl $tmp/hbond.tbl

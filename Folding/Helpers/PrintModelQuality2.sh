@@ -29,7 +29,7 @@ if [ -z "$listFile" ]; then
 	for j in $resultDir/*-quality.txt.sorted
         do
                 if [ -s $j ]; then
-                        python $cmdDir/FindBest.py $j
+                        python2 $cmdDir/FindBest.py $j
                 fi
         done
 	exit
@@ -40,7 +40,7 @@ do
 	for j in $resultDir/${i}*-quality.txt.sorted
 	do
 		if [ -s $j ]; then
-			python $cmdDir/FindBest.py $j
+			python2 $cmdDir/FindBest.py $j
 		fi
 	done
 done

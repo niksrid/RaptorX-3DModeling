@@ -4,7 +4,7 @@ import os
 import cPickle
 
 if len(sys.argv) < 2:
-	print 'Usage: python SublistByNames.py proteinList PKLfile1 PKLfile2 PKLfile3 ... '
+	print 'Usage: python2 SublistByNames.py proteinList PKLfile1 PKLfile2 PKLfile3 ... '
 	exit(1)
 
 listFile = sys.argv[1]

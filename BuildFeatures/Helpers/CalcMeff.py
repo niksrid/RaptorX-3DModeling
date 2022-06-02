@@ -3,7 +3,7 @@ import sys
 import os
 
 if len(sys.argv) <2:
-	print 'python CalcMeff.py a3m_file or a2m_file [seqid threshold in [0, 1], default 0.7]'
+	print 'python2 CalcMeff.py a3m_file or a2m_file [seqid threshold in [0, 1], default 0.7]'
 	exit(-1)
 
 threshold = 0.7

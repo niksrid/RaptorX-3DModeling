@@ -104,7 +104,7 @@ def CreateSequenceNums(imglist, imglens):
 
 #---------- main --------#
 if len(sys.argv) < 2:
-	print 'python PlotDistanceMatrix.py targetName.bound.txt [result_dir]'
+	print 'python2 PlotDistanceMatrix.py targetName.bound.txt [result_dir]'
 	print '\ttargetName.bound.txt: a file for the predicted contact distance matrix in text format'
 	print '\tresult_dir: optional, saving the resultant images in this folder; default is current work directory'
     	exit(-1)

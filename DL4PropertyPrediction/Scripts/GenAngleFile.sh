@@ -18,7 +18,7 @@ fi
 
 ${PDBTool} -i ${PDBDir}/${protein}.pdb -F 8 -o ${protein}.pdb
 mv ${protein}.ang ${protein}.raw_ang
-python $PDBTool2 ${protein} $TPLDir/${protein}.tpl ${protein}.raw_ang  ${protein}.ang
+python2 $PDBTool2 ${protein} $TPLDir/${protein}.tpl ${protein}.raw_ang  ${protein}.ang
 chmod a+r ${protein}.ang
 
 HOST=`hostname`

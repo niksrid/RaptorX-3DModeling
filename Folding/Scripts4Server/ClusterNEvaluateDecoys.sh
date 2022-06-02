@@ -68,7 +68,7 @@ cp /dev/null $target.deepscore
 ## run DeepScore to calculate model quality
 for m in `cat $target.models.list`
 do
-	scores=`DeepScore $m $native | python scripts/CollectModelQuality.py `
+	scores=`DeepScore $m $native | python2 scripts/CollectModelQuality.py `
 	echo $scores $m >> $target.deepscore
 done
 
@@ -76,7 +76,7 @@ done
 maxcluster64bit -l $target.models.list  > $target.maxcluster
 
 ## evaluate the consensus analysis result
-python scripts/AnalyzeMaxCluster.py $target.maxcluster $target.deepscore | tee $target.consensus
+python2 scripts/AnalyzeMaxCluster.py $target.maxcluster $target.deepscore | tee $target.consensus
 
 ## clean up
 rm -f $target.deepscore $target.maxcluster $target.models.list

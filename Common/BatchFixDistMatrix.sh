@@ -46,7 +46,7 @@ do
 				orgfile=$tplfile
 			fi
 
-        		python $program $orgfile $structfile $RESDIR &
+        		python2 $program $orgfile $structfile $RESDIR &
                         break
                 else
                         a=`expr $RANDOM % 3 `

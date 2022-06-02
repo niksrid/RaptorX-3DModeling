@@ -225,10 +225,10 @@ if [[ $distFile = "" || ! -f $distFile ]]; then
 fi
 
 if [ ${boundType} -lt 0 ]; then
-	python $bin/GenDistRestraints4CNS.py -t $boundType -c $Zcutoff -a $atomPairTypes $seqFile $distFile > $tmp/contact.tbl
+	python2 $bin/GenDistRestraints4CNS.py -t $boundType -c $Zcutoff -a $atomPairTypes $seqFile $distFile > $tmp/contact.tbl
 
 else
-	python $bin/GenDistRestraints4CNS.py -t $boundType -c $distCutoff -g $sigma_value -a $atomPairTypes $seqFile $distFile > $tmp/contact.tbl
+	python2 $bin/GenDistRestraints4CNS.py -t $boundType -c $distCutoff -g $sigma_value -a $atomPairTypes $seqFile $distFile > $tmp/contact.tbl
 fi
 
 if [ $? != 0 ]; then
@@ -258,7 +258,7 @@ if [[ $angleFile != "" && -f $angleFile ]]; then
 		fi
 	else
 		## use predicted local structure property information
-		python $bin/GenPropertyRestraints4CNS.py -k $dihedralEnergyConstant -d $tmp/ssnoe.tbl -a $tmp/dihedral.tbl -h $tmp/hbond.tbl $seqFile $angleFile
+		python2 $bin/GenPropertyRestraints4CNS.py -k $dihedralEnergyConstant -d $tmp/ssnoe.tbl -a $tmp/dihedral.tbl -h $tmp/hbond.tbl $seqFile $angleFile
 		if [ $? != 0 ]; then
 			echo "Error in generating local restraints from predicted Phi/Psi angles and secondary structures"
 			exit 1
@@ -351,7 +351,7 @@ done
 
 for ((i=1;i<=$topk;i++))
 do
-	python $FoldingHome/scripts/CalcNOEViolationPerResidue.py $seqFile $tmp/${targetName}_model$i.pdb $tmp/contact.tbl
+	python2 $FoldingHome/scripts/CalcNOEViolationPerResidue.py $seqFile $tmp/${targetName}_model$i.pdb $tmp/contact.tbl
 	mv ${targetName}_model$i.localQuality.txt $tmp/
 done
 

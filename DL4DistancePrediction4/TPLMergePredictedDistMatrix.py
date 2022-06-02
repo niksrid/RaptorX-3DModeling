@@ -15,7 +15,7 @@ import getopt
 
 def Usage():
 
-    	print 'python TPLMergePredictedDistMatrix.py [-m method | -g ground_truth_file | -c ] pkl_files '
+    	print 'python2 TPLMergePredictedDistMatrix.py [-m method | -g ground_truth_file | -c ] pkl_files '
 	print '   This script merges predicted dist matrices derived from multiple templates'
 	print '  -m: specify merge method: amean for arithmetic mean (default) while gmean for geometric mean'
 	print '  -g: specify the native dist matrix file (with suffix .atomDistMatrix.pkl). If provided, contact prediction accuracy will be calculated'

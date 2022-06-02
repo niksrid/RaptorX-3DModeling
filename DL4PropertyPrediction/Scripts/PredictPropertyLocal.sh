@@ -99,7 +99,7 @@ else
         GPU=cuda$GPU
 fi
 
-THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python $program -p $inputFeature -m $ModelFiles -d $ResultDir 
+THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python2 $program -p $inputFeature -m $ModelFiles -d $ResultDir 
 if [ $? -ne 0 ]; then
 	echo "ERROR: Failed to predict property for $inputFeature!"
 	exit 1

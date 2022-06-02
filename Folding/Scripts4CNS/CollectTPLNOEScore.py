@@ -3,7 +3,7 @@ import sys
 import numpy as np
 
 def Usage():
-	print 'python CollectTPLNOEScore.py TPLNOEfile [DeepThreaderRankFile]'
+	print 'python2 CollectTPLNOEScore.py TPLNOEfile [DeepThreaderRankFile]'
 	
 
 def LoadTemplates(tempListFile):

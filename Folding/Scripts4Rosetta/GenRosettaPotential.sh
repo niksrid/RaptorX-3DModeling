@@ -109,7 +109,7 @@ PotentialDir=$savefolder
 
 ## generate pairwise potential
 PairPotentialFile=$PotentialDir/${target}.pairPotential.$PotentialType.$MaxDist.$Alpha.pkl
-python $DistanceFoldingHome/GenPairwisePotentialFromPrediction.py -s $PairPotentialFile -a $atomType -r $PotentialType+$MaxDist+$Alpha $pairMatrixFile 
+python2 $DistanceFoldingHome/GenPairwisePotentialFromPrediction.py -s $PairPotentialFile -a $atomType -r $PotentialType+$MaxDist+$Alpha $pairMatrixFile 
 
 ## the resultant CST file has name ${target}.pairPotential4Rosetta.SPLINE.txt
 cstfile=${PotentialDir}/${target}.pairPotential4Rosetta.SPLINE.txt
@@ -119,9 +119,9 @@ if [ ! -z "$querySeqFile" ]; then
 	options=$options" -q $querySeqFile "
 fi
 
-python $DistanceFoldingHome/Scripts4Rosetta/GeneratePairPotential4Rosetta.py $options $PairPotentialFile
+python2 $DistanceFoldingHome/Scripts4Rosetta/GeneratePairPotential4Rosetta.py $options $PairPotentialFile
 if [ $? -ne 0 -o ! -f $cstfile ]; then
-        echo "ERROR: failed to run python $DistanceFoldingHome/Scripts4Rosetta/GeneratePairPotential4Rosetta.py $options $PairPotentialFile"
+        echo "ERROR: failed to run python2 $DistanceFoldingHome/Scripts4Rosetta/GeneratePairPotential4Rosetta.py $options $PairPotentialFile"
         exit 1
 fi
 
@@ -135,9 +135,9 @@ if [ ! -z "$querySeqFile" ]; then
 	options=$options" -q $querySeqFile "
 fi
 
-python $DistanceFoldingHome/GenPropertyPotential4Rosetta.py $options $propertyFile
+python2 $DistanceFoldingHome/GenPropertyPotential4Rosetta.py $options $propertyFile
 if [ $? -ne 0 -o ! -f $PhiPsiPotentialFile ]; then
-        echo "ERROR: failed to run python $DistanceFoldingHome/GenPropertyPotential4Rosetta.py $options $propertyFile"
+        echo "ERROR: failed to run python2 $DistanceFoldingHome/GenPropertyPotential4Rosetta.py $options $propertyFile"
         exit 1
 fi
 cat $PhiPsiPotentialFile >> $cstfile

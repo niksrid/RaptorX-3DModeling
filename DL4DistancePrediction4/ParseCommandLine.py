@@ -6,7 +6,7 @@ import config
 from utilsNoT import IsNumber
 
 def Usage():
-    	print 'python TrainDistancePredictor.py -N ModelID -n network_type -y response -c conv1d_hiddens -d conv2d_hiddens -l dilation_factors -e logreg_hiddens -w halfWinSize -x method_for_seq2matrix -t trainMetaData_json -v validMetaData_json -p predfile_PKL -a trainAlgorithm -g regfactors -r restart_file -s minibatchSize -k keyword_value'
+    	print 'python2 TrainDistancePredictor.py -N ModelID -n network_type -y response -c conv1d_hiddens -d conv2d_hiddens -l dilation_factors -e logreg_hiddens -w halfWinSize -x method_for_seq2matrix -t trainMetaData_json -v validMetaData_json -p predfile_PKL -a trainAlgorithm -g regfactors -r restart_file -s minibatchSize -k keyword_value'
 	print ' '
 	print '-N: optional, specify a model ID (default None), e.g., A, B, 1, 2'
     	print '-n: specify a network type, e.g., ResNet2D or DilatedResNet2D (default). ' 

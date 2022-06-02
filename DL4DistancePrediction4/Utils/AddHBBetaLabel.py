@@ -6,10 +6,10 @@ import cPickle
 
 """
 This script merges the distance prediction features with the HBBeta matrices to form a new training and validation set for atom-level distance, hydrogen-bonding, beta-pairing prediction
-Usage: python AddHBBetaFeatures.py originalDistanceFeaturesPKL HBBetaMatrixPKL_folder
+Usage: python2 AddHBBetaFeatures.py originalDistanceFeaturesPKL HBBetaMatrixPKL_folder
 """
 if len(sys.argv)<3:
-	print 'python AddHBBetaLabel.py originalDistanceFeaturesPKL HBBetaMatrixPKL_folder'
+	print 'python2 AddHBBetaLabel.py originalDistanceFeaturesPKL HBBetaMatrixPKL_folder'
 	exit(-1)
 
 originalFeatureFile = sys.argv[1]

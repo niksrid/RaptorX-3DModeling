@@ -6,7 +6,7 @@ import cPickle
 from DL4PropertyPrediction import PropertyUtils
 
 def Usage():
-	print 'python GenNativePropertyFromNativeOrTPPKLL.py tplpklFile/nativeFile'
+	print 'python2 GenNativePropertyFromNativeOrTPPKLL.py tplpklFile/nativeFile'
 	print '	tplpklFile/nativeFile: a tpl.pkl file or a native.pkl file'
 
 

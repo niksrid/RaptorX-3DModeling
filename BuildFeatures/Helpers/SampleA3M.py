@@ -13,7 +13,7 @@ import numpy as np
 ## further, the first sequence in the a3m file shall be the query sequence under prediction
 
 def Usage():
-	print 'python SampleA3M.py inputFile ratio [numSamples]'
+	print 'python2 SampleA3M.py inputFile ratio [numSamples]'
 	print '	inputFile: input MSA in a3m format'
 	print '	ratio: the ratio of MSA to be sampled'
 	print '	numSamples: number of sub-MSAs to be sampled'

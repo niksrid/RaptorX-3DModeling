@@ -20,4 +20,4 @@ if [ $# -ge 3 ]; then
 	cutoff=$3
 fi
 
-python $program -s ${target}-Spicker -c $cutoff $seqFile $modelFolder
+python2 $program -s ${target}-Spicker -c $cutoff $seqFile $modelFolder

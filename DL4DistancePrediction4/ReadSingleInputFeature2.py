@@ -12,7 +12,7 @@ psicovSuffix=".psicov_zscore"
 otherPairFeatureSuffix=".pot"
 
 def Usage():
-	print 'python ReadSingleInputFeature2.py proteinName featureFolder [savefolder]'
+	print 'python2 ReadSingleInputFeature2.py proteinName featureFolder [savefolder]'
     	print '	This script generates input feature for contact/distance/orientation prediction for one protein and save the result as dict() in a PKL file.'
 	print '	featurefolder: it shall contain the following files: .hhm, .predictedProperties.pkl, .ccmpred, .ccmpred_zscore, and .pot '
 	print '	savefolder: optional, if not specified set to current work directory'

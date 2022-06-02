@@ -28,5 +28,5 @@ do
 	alnFile=$alnDir/${tplName}-${queryName}.fasta
 	queryPDB=$queryDir/$queryName.pdb
 	tplPDB=$tplDir/$tplName.pdb
-	python $program $alnFile $queryPDB $tplPDB $ResultDir 
+	python2 $program $alnFile $queryPDB $tplPDB $ResultDir 
 done

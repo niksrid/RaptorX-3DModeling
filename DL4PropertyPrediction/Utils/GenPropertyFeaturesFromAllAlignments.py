@@ -16,8 +16,8 @@ def load_protein_list(list_file):
 	return lines
 
 def Usage():
-	#print 'python GenPropertyFeaturesFromAllAlignments.py -i alignment_file [ -q tgt_dir ] [ -t tpl_dir ] [ -a tpl_angle_file_dir ]'
-	print 'python GenPropertyFeaturesFromAllAlignments.py -i alignment_file [ -q tgt_dir ] [ -t tpl_dir ]'
+	#print 'python2 GenPropertyFeaturesFromAllAlignments.py -i alignment_file [ -q tgt_dir ] [ -t tpl_dir ] [ -a tpl_angle_file_dir ]'
+	print 'python2 GenPropertyFeaturesFromAllAlignments.py -i alignment_file [ -q tgt_dir ] [ -t tpl_dir ]'
 	print '	This script generates template-based features for property prediction from a set of alignments'
 	print '\r-i: an alignment file in FASTA format, which may contain multiple pairwise alignments and in each alignment, template is placed before query'
 	print '\r-q: the tgt folder, each file shall end with .tgt or .tgt.pkl, default ' + TGTDir

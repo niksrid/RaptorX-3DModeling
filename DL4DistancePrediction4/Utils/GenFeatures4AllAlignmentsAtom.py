@@ -125,7 +125,7 @@ def LoadAtomCoordinates(atomCoord_file):
 	return coords
 
 def Usage():
-	print 'python GenFeatures4AllAlignmentsAtom.py -i alignment_file [ -q tgt_dir ] [ -t tpl_dir ] [ -p atom_coord_dir]'
+	print 'python2 GenFeatures4AllAlignmentsAtom.py -i alignment_file [ -q tgt_dir ] [ -t tpl_dir ] [ -p atom_coord_dir]'
 	print '\r-i: alignment file in fasta format, template is placed before query '
 	print '\r-q: the tgt folder, default: ' + TGTDir
 	print '\r-t: the tpl folder, default: ' + TPLDir

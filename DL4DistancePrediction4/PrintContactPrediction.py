@@ -17,7 +17,7 @@ def FindStringsStartWith(strList, prefix):
 	return results
 
 def Usage():
-	print 'python PrintContactPrediction.py [-a | -c | -d savefolder ] predictedDistMatrixPKL'
+	print 'python2 PrintContactPrediction.py [-a | -c | -d savefolder ] predictedDistMatrixPKL'
 	print '	This script prints predicted contacts from a predicted distance/orientation file and saves the result in two text formats: matrix and CASP'
 	print '	-a: if is specified, also prints contact information for other atom pairs, e.g., CaCa, defaut no'
 	print '	  	for other atom pairs, the result files are named after targetName.XX.CASP.rr and targetName.XX.CM.txt where XX represents the atom pair'

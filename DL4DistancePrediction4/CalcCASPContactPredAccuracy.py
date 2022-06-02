@@ -8,7 +8,7 @@ import ContactUtils
 if __name__ == "__main__":
 
 	if len(sys.argv) != 3:
-    		print 'python CalcCASPContactPredAccuracy.py pred_CASP_file nativeDistMatrixFilePKL'
+    		print 'python2 CalcCASPContactPredAccuracy.py pred_CASP_file nativeDistMatrixFilePKL'
 		print '	the native file may end with .native.pkl or .atomDistMatrix.pkl'
     		exit(1)
 

@@ -45,9 +45,9 @@ normalize=$DistanceFoldingHome/Helpers/Normalize.py
 if [ -s $scorefile ]; then
 	processID=$$	
 	sort -k2,2 -g $scorefile > $scorefile.$processID
-	python $normalize $scorefile.$processID $scorefile
+	python2 $normalize $scorefile.$processID $scorefile
 	if [ $? -ne 0 ]; then
-		echo "ERROR: failed to run python $normalize $scorefile.$processID $scorefile"
+		echo "ERROR: failed to run python2 $normalize $scorefile.$processID $scorefile"
 		exit 1
 	fi
 	rm -f $scorefile.$processID

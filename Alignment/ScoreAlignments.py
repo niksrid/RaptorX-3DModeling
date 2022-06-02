@@ -7,7 +7,7 @@ import SimilarityScore
 from LoadAlignments import LoadAlignments
 
 def Usage():
-	print "python ScoreAlignments.py alignmentFile tplDir tgtDir [seqBounds]"
+	print "python2 ScoreAlignments.py alignmentFile tplDir tgtDir [seqBounds]"
 	print "	This script scores one or multiple alignments in a file (FASTA format)"
 	print "	tplDir: the folder for tpl or tpl.pkl files"
 	print "	tgtDir: the folder for tgt or tgt.pkl files"

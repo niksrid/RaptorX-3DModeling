@@ -26,7 +26,7 @@ if [ -z "$listFile" ]; then
 		for j in $i/*-quality.txt.sorted
 		do
 			if [ -s $j ]; then
-				python $cmdDir/FindBest.py $j
+				python2 $cmdDir/FindBest.py $j
 			fi
 		done
 	done
@@ -41,7 +41,7 @@ do
 		for k in $j/*-quality.txt.sorted
 		do 
 			if [ -s $k ]; then
-				python $cmdDir/FindBest.py $k
+				python2 $cmdDir/FindBest.py $k
 			fi
 		done
 	done

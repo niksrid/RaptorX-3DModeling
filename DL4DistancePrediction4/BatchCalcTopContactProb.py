@@ -7,7 +7,7 @@ import cPickle
 import ContactUtils
 
 def Usage():
-	print "python BatchCalcTopContactProb.py folder [fileSuffix]"
+	print "python2 BatchCalcTopContactProb.py folder [fileSuffix]"
 	print "	This script calculates the sum of top predicted contact probabilities for all the predicted contact/distance files in a folder"
 	print "	folder: a folder containing a few files ending with fileSuffix (default .predictedDistMatrix.pkl) "
 	

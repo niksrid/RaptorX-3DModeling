@@ -38,7 +38,7 @@ do
                 ## check the number of running jobs
                 numRunningJobs=`ps -x | grep ${keywords} | grep -v ${myself} | wc -l`
                 if [ $numRunningJobs -lt `expr $numAllowedJobs + 1 ` ]; then
-			(python $program $MSADir/${target}.a3m $ratio $numSamples; mv ${target}.a3m_S? $ResDir/) &
+			(python2 $program $MSADir/${target}.a3m $ratio $numSamples; mv ${target}.a3m_S? $ResDir/) &
                         break
                 else
                         a=`expr $RANDOM % 4 `

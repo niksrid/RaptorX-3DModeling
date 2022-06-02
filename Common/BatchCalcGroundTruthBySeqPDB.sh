@@ -86,7 +86,7 @@ do
                                 structfile=$ciffile
                         fi
 
-        		python $program $structfile $SEQDIR/${i}.fasta $RESDIR &
+        		python2 $program $structfile $SEQDIR/${i}.fasta $RESDIR &
 			sleep 1
                         break
                 else

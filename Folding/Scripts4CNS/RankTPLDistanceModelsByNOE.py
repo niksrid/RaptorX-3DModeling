@@ -3,7 +3,7 @@ import sys
 import numpy as np
 
 def Usage():
-	print 'python RankTPLDistanceModelsByNOE.py TPLNOEfile [DeepThreaderRankFile]'
+	print 'python2 RankTPLDistanceModelsByNOE.py TPLNOEfile [DeepThreaderRankFile]'
 	
 
 def LoadTemplates(tempListFile):

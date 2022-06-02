@@ -9,7 +9,7 @@ from DL4PropertyPrediction import PropertyUtils
 from DL4PropertyPrediction.config import Response2LabelName, Response2LabelType
 
 def Usage():
-    	print 'python TPLMergePredictedProperties.py [-m method | -g ground_truth_file ] pkl_files '
+    	print 'python2 TPLMergePredictedProperties.py [-m method | -g ground_truth_file ] pkl_files '
 	print '  This script merges predicted properties derived from multiple templates'
 	print '  -m: specify merge method: amean for arithmetic mean (default) or gmean for geometric mean'
 	print '  -g: specify the file for native labels (with suffix .nativeProperties.pkl). If provided, prediction accuracy will be evaluated'

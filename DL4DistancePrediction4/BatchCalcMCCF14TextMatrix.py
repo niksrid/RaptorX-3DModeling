@@ -10,7 +10,7 @@ import Metrics
 if __name__ == "__main__":
 
 	if len(sys.argv) != 4:
-    		print 'python BatchCalcMCCF1.py proteinListFile predFolder nativeFolder'
+    		print 'python2 BatchCalcMCCF1.py proteinListFile predFolder nativeFolder'
 		print '      The matrix files have text format with L lines and each line has L columns where L is the protein sequence length'
     		exit(1)
 

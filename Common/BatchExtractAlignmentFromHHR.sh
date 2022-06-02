@@ -120,5 +120,5 @@ cp /dev/null $groupFile
 for target in `cat $targets`
 do
 	#echo $target
-	python $program $HHRDir/${target}.pdb70.hhr $HHMDir/${target}.hhm -E $E -I $MaxSeqID -c $PDBClusterFile -t $templates -d $savefolder -n $maxNumTemplates >> $groupFile
+	python2 $program $HHRDir/${target}.pdb70.hhr $HHMDir/${target}.hhm -E $E -I $MaxSeqID -c $PDBClusterFile -t $templates -d $savefolder -n $maxNumTemplates >> $groupFile
 done

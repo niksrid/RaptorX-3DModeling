@@ -8,7 +8,7 @@ from GenPropertyFeaturesFromHHM import LoadTestData4Properties
 ## this script generates input features for multiple proteins from HHM files for property prediction
 
 def Usage():
-	print 'python GenPropertyFeatures4Proteins.py proteinList hhmFolder/a3mFolder [savefile]'
+	print 'python2 GenPropertyFeatures4Proteins.py proteinList hhmFolder/a3mFolder [savefile]'
 	print 'This script generates a property feature file (in PKL) for multiple proteins from their MSA files'
 	print '\tproteinList: a file containing a list of protein names, each in one line'
 	print '\thhmFolder/a3mFolder: a folder containing the MSA files (i.e, .hhm or .a3m files); when .a3m files are used as input, please make sure that hhmake is accessible'

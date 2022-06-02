@@ -9,7 +9,7 @@ from CIF2PDB import CIF2PDB
 
 if __name__ == "__main__":
 	if len(sys.argv) < 3:
-		print 'python CalcDistMatrixFromSeqPDB.py structFile seqFile [resDir]'
+		print 'python2 CalcDistMatrixFromSeqPDB.py structFile seqFile [resDir]'
 		print '	This script calculates only distance matrices from a protein structure file and a sequence file'
 		print '	structFile: a protein structure file ending with .cif or .pdb'
 		print '	seqFile: a file for primary sequence in FASTA format. It is used to determine which residues shall be selected from the structure file'

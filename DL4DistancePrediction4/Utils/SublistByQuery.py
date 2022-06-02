@@ -4,7 +4,7 @@ import os
 import cPickle
 
 if len(sys.argv) < 2:
-	print 'Usage: python SublistByQuery.py PKLfile1 PKLfile2 PKLfile3 ...'
+	print 'Usage: python2 SublistByQuery.py PKLfile1 PKLfile2 PKLfile3 ...'
 	exit(1)
 
 PKLfiles = sys.argv[1:]

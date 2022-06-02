@@ -10,7 +10,7 @@ from utilsNoT import str_display
 if __name__ == "__main__":
 
 	if len(sys.argv) < 3:
-    		print 'python EvaluateContactAccuracy.py predMatrixFile groudTruthFile [targetName]'
+    		print 'python2 EvaluateContactAccuracy.py predMatrixFile groudTruthFile [targetName]'
 		print '\tThis script evaluates the accuracy of predicted contact matrix by comparing it with ground truth matrix'
 		print '\tpredMatrixFile: the predicted matrix file in text or cPickle format, determined by its suffix'
 		print '\t\twhen the suffix is .txt or .ccmpred, it is a text matrix file with L rows and L columns where L is protein length and each entry shall be predicted confidence/probability of being a contact'

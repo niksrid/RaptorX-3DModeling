@@ -11,7 +11,7 @@ import PropertyUtils
 from utils import LoadFASTAFile
 
 def Usage():
-	print 'python GenPropertyRestraints4CNS.py [-k energy_constant | -d distRestraint_file | -a angleRestraint_file | -h hbondRestraint_file  ] seq_file_in_FASTA predictedProperties_in_PKL\n'
+	print 'python2 GenPropertyRestraints4CNS.py [-k energy_constant | -d distRestraint_file | -a angleRestraint_file | -h hbondRestraint_file  ] seq_file_in_FASTA predictedProperties_in_PKL\n'
 	print '   This script generates both angle and secondary structure restraints for a sequence'
 	print '   -k: energy constant for backbone dihedral torsion angle restraints, default 5.0'
 	print '   -d: file for saving distance restraints derived from secondary structure, default ssnoe.tbl'

@@ -12,7 +12,7 @@ from Common.SequenceUtils import LoadFASTAFile
 ## this script combine domain models into whole-chain models using structure alignment
 ## please make sure DeepScore is in bin path
 def Usage():
-	print 'python CombineDomainModels.py [-d savefolder ] WholeChainModelFile D1ModelFile D2ModelFile ...'
+	print 'python2 CombineDomainModels.py [-d savefolder ] WholeChainModelFile D1ModelFile D2ModelFile ...'
 	print '	This script combines domain models into a whole-chain model using model structure alignment'
 	print '		Please make sure that an exectuable program DeepScore is available'
 	print '	WholeChainModelFile: an initial whole-chain model, which is used as the overall scaffold'

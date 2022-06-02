@@ -6,7 +6,7 @@ from Bio.PDB import PDBList
 ##this script may download pdb files for a list of pdb codes.
 
 if len(sys.argv)<3:
-	print 'python DownloadPDBs.py pdbcodeListFile format [ResDir]'
+	print 'python2 DownloadPDBs.py pdbcodeListFile format [ResDir]'
 	print '\tpdbcodeListFile: a file of PDB IDs, in upper or lower case'
 	print '\tformat: pdb or mmCif. This option specifies which PDB file format needed'
 	exit(1)

@@ -78,10 +78,10 @@ mkdir -p $ResultDir
 
 if [[ $nativeDir == "" || ! -d "$nativeDir" ]]; then
 	echo "The folder for native properties does not exist"
-	THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python $program -p $predFile -m $ModelFiles -d $ResultDir 
+	THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python2 $program -p $predFile -m $ModelFiles -d $ResultDir 
 	ret=$?
 else
-	THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python $program -p $predFile -m $ModelFiles -g $nativeDir -d $ResultDir 
+	THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python2 $program -p $predFile -m $ModelFiles -g $nativeDir -d $ResultDir 
 	ret=$?
 fi
 

@@ -178,27 +178,27 @@ if [ $printContactInCASPOnly -eq 1 ]; then
 	options=" -c "
 fi
 
-python $DL4DistancePredHome/PrintContactPrediction.py $options ${proteinName}.predictedDistMatrix.pkl
+python2 $DL4DistancePredHome/PrintContactPrediction.py $options ${proteinName}.predictedDistMatrix.pkl
 if [ $? -ne 0 ]; then
         echo "ERROR: failed to print predicted contact matrix for $proteinName !"
         exit 1
 fi
 
 ## visualize the predicted contact map
-python $DL4DistancePredHome/Utils/PlotContactMapByMatrix.py ${proteinName}.CM.txt
+python2 $DL4DistancePredHome/Utils/PlotContactMapByMatrix.py ${proteinName}.CM.txt
 if [ $? -ne 0 ]; then
         echo "ERROR: failed to visualize the predicted contact matrix for ${proteinName} ! "
         exit 1
 fi
 
 ## visualize the distance matrix
-python $DL4DistancePredHome/Utils/EstimateAtomDistBounds.py ${proteinName}.predictedDistMatrix.pkl 
+python2 $DL4DistancePredHome/Utils/EstimateAtomDistBounds.py ${proteinName}.predictedDistMatrix.pkl 
 if [ $? -ne 0 ]; then
         echo "ERROR: failed to estimate inter-atom distance bound for ${proteinName} ! "
         exit 1
 fi
 
-python $DL4DistancePredHome/Utils/PlotDistanceMatrix.py ${proteinName}.bound.txt
+python2 $DL4DistancePredHome/Utils/PlotDistanceMatrix.py ${proteinName}.bound.txt
 if [ $? -ne 0 ]; then
         echo "ERROR: failed to visualize the predicted distance matrix for ${proteinName} ! "
         exit 1

@@ -12,7 +12,7 @@ import getopt
 
 def Usage():
 
-    	print 'python MergePredictedContactMatrix.py [-m method | -g ground_truth_folder | -c ] pkl_files '
+    	print 'python2 MergePredictedContactMatrix.py [-m method | -g ground_truth_folder | -c ] pkl_files '
 	print '  This script builds a predicted contact matrix from a set of predicted distance matrix files '
 	print '  -m: specify merge method: amean for arithmetic mean (default) while gmean for geometric mean'
 	print '  -g: specify the folder containing the ground truth. If provided, contact prediction accuracy will be calculated'
@@ -22,7 +22,7 @@ def Usage():
     	print '     An input file contains a tuple of 6 items: name, primary sequence, predicted distance prob matrix, predicted contact prob matrix, labelWeights, reference probabilities'
     	print '     but labelWeight is None for a fixedDistMatrix.pkl file'
 
-	print '  This script will output one or a few files. The .predictedContactMatrix.pkl file is a python dictionary containing protein name, sequence and predicted contact matrix '
+	print '  This script will output one or a few files. The .predictedContactMatrix.pkl file is a python2 dictionary containing protein name, sequence and predicted contact matrix '
 	print '  If the -c option is used, the resultant .gcnn file is a contact matrix in text format.'
 
 def MergeContactMatrix4OneProtein(inputFiles, method):

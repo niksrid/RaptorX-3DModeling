@@ -98,7 +98,7 @@ def CreateSequenceNums(imglist, imglens):
 
 #---------- main --------#
 if len(sys.argv) < 2:
-	print 'python PlotContactMapByMatrix.py targetName.gcnn [result_dir]'
+	print 'python2 PlotContactMapByMatrix.py targetName.gcnn [result_dir]'
 	print '\ttargetName.gcnn: a file for the predicted contact matrix in text format'
 	print '\tresult_dir: optional, saving the resultant images in this folder; default is current work directory'
     	exit(-1)

@@ -130,7 +130,7 @@ if [ ! -d $ResultDir ]; then
 	mkdir -p $ResultDir
 fi
 
-command=" python $program -m $ModelFiles -p $inputFeature -d $ResultDir "
+command=" python2 $program -m $ModelFiles -p $inputFeature -d $ResultDir "
 if [ $# -eq 3 ]; then
 	command=$command" -a $aliStr -t $tplStr "
 fi

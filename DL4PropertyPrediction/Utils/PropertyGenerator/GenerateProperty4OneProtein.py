@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 
 
 ## This script generates the structure properties from native structure, with information encoded in tpl and initial angle file

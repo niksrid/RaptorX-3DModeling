@@ -72,7 +72,7 @@ def BuildVirtualCB(residue):
 	cb = cb_at_origin + ca
 	return cb
 
-## get the SEQRES of one specific chain. returnStr determines if a python string shall be returned (default)
+## get the SEQRES of one specific chain. returnStr determines if a python2 string shall be returned (default)
 def GetSEQRESOfOneChain(pdbfile, chainName, returnStr=True):
         with open(pdbfile) as fh:           
                 for record in PdbSeqresIterator(fh):

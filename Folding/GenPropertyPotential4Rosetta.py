@@ -12,7 +12,7 @@ from DL4PropertyPrediction import PropertyUtils
 from Common.SequenceUtils import LoadFASTAFile
 
 def Usage():
-        print 'python GenPropertyPotential4Rosetta.py [-a propertyType | -f funcType | -w energyWeight | -s savefile | -q querySeqFile | -o ] predidctedProperty_PKL'
+        print 'python2 GenPropertyPotential4Rosetta.py [-a propertyType | -f funcType | -w energyWeight | -s savefile | -q querySeqFile | -o ] predidctedProperty_PKL'
         print '  This script converts predicted property (e.g., phi/psi angles) to Rosetta potential'
         print '         predictedProperty_PKL: a PKL file contains a tuple of at least 3 items: name, primary sequence and predicted parameters for property distribution'
 	print '		Ideally, this file shall also contain prediction of property represented as a 1-d array with element indicating the probability of disorder'

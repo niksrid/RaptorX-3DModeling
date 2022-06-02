@@ -4,7 +4,7 @@ import os
 import sys
 
 if len(sys.argv)<2:
-	print 'python FindBest.py qualityFile4OneTarget'
+	print 'python2 FindBest.py qualityFile4OneTarget'
 	exit(1)
 
 qualityFile = sys.argv[1]

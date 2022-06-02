@@ -129,4 +129,4 @@ if [ $? -ne 0 ]; then
 fi
 
 ## generate individual alignments
-python $ModelingHome/Utils/ParseAlignmentFromHHR.py -d $ResDir $hhrfile $ResDir/${seqName}.hhm
+python2 $ModelingHome/Utils/ParseAlignmentFromHHR.py -d $ResDir $hhrfile $ResDir/${seqName}.hhm

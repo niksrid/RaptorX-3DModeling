@@ -3,7 +3,7 @@ import sys
 import os
 
 if len(sys.argv)<3:
-	print 'Usage: python AnalyzeMaxClusterDeepScore.py MaxClusterResultFile DeepScoreResultFile'
+	print 'Usage: python2 AnalyzeMaxClusterDeepScore.py MaxClusterResultFile DeepScoreResultFile'
 	exit(-1)
 
 mcFile = sys.argv[1]

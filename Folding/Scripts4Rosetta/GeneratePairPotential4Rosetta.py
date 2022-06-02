@@ -11,7 +11,7 @@ from Common.SelectAtoms import SelectAtomPair, SelectAtoms4Orientation
 from Common.SequenceUtils import LoadFASTAFile
 
 def Usage():
-	print 'python GeneratePairPotential4Rosetta.py [-a labelNames] [ -f funcType] [-s minSeqSep] [ -c potentialCutoff ] [-t topRatio] [-q querySeqFile] [-d savefolder] potential_PKL'
+	print 'python2 GeneratePairPotential4Rosetta.py [-a labelNames] [ -f funcType] [-s minSeqSep] [ -c potentialCutoff ] [-t topRatio] [-q querySeqFile] [-d savefolder] potential_PKL'
 	print '     potential_PKL: the raw potential matrix in PKL format, a tuple of 5 items: target, sequence, potential (dict), cutoffs (dict), validProbs(dict)'
 	print '     -a: labelNames, e.g., CbCb, CbCb+TwoROri(default), CbCb+AllOri where TwoROri represents inter-residue orientation and AllOri denotes all orientation types'
 	print '     -f: potential function type: SPLINE(default), only Rosetta SPLINE is supported now'
@@ -29,11 +29,11 @@ def Usage():
 	print '     -q: the protein sequence file. If provided, check the consistency between this file and the sequence in potential_PKL'		
 	print '	    -d: the folder for saving the result file, default current work directory'
 	print '		one file XXX.pairPotential4Rosetta.SPLINE.txt and one subfolder SplinePotential4XXX will be generated under this folder where XXX is the base name of potential_PKL'
-	print '	    Example: python GeneratePairPotential4Rosetta.py -a CbCb+AllOri -s 2+2 T0950.pairPotential.DFIRE.18.1.61.pkl'
+	print '	    Example: python2 GeneratePairPotential4Rosetta.py -a CbCb+AllOri -s 2+2 T0950.pairPotential.DFIRE.18.1.61.pkl'
 
 ## this function writes the constraints into Rosetta format
 ## target is the protein name
-## constraints is a list of python dict and each dict corresponds to one constraint
+## constraints is a list of python2 dict and each dict corresponds to one constraint
 def WriteSplineConstraints(constraints, savefile=None, savefolder4histfile=None):
 	if savefile is None:
 		print 'ERROR: please specify the save file for constaints!'

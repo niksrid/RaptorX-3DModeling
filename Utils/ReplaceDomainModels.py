@@ -12,7 +12,7 @@ from Common.SequenceUtils import LoadFASTAFile
 ## this script replaces one or multiple domain models in a whole-chain model through model alignment
 ## please make sure DeepScore is in bin path
 def Usage():
-	print 'python ReplaceDomainModels.py [-d savefolder | -r ] WholeChainModelFile D1ModelFile D2ModelFile ...'
+	print 'python2 ReplaceDomainModels.py [-d savefolder | -r ] WholeChainModelFile D1ModelFile D2ModelFile ...'
 	print '	This script replace one or multiple domain models in a whole-chain model through model structure alignment'
 	print '		Ideally, one model to be replaced shall be similar to its replacement'
 	print '		Please make sure that an exectuable program DeepScore is available'

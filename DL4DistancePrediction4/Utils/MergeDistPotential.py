@@ -13,7 +13,7 @@ import config
 from SelectAtoms import SelectAtomPair
 
 def Usage():
-    	print 'python MergeDistPotential.py [-t] distPotential_PKL1 distPotential_PKL2...'
+    	print 'python2 MergeDistPotential.py [-t] distPotential_PKL1 distPotential_PKL2...'
 	print '	 This script calculates the average potential of a set of potential files'
     	print '  -t: if specified, output the distance potential matrix in text format; otherwise in PKL file (default)'
 

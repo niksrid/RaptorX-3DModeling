@@ -23,7 +23,7 @@ from SequenceUtils import LoadFASTAFile
 ## When some amino acids do not have CG atom, Cb or Ca will be used. If do not want this, please set bUseAlternativeAtoms=False
 
 def Usage():
-	print 'python ExtractCoordinatesFromSeqPDB.py seq_file pdb_file [numAllowedMisMatches]'
+	print 'python2 ExtractCoordinatesFromSeqPDB.py seq_file pdb_file [numAllowedMisMatches]'
 	print '	numAllowedMisMatches: the max number (default 5) of allowed mismatches in the aligned positions of query sequence and pdb sequence '
 
 

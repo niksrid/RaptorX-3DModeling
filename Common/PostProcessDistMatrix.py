@@ -5,7 +5,7 @@ import cPickle
 from PDBUtils import PostProcessDistMatrix
 
 def Usage():
-	print "python PostProcessDistMatrix.py groundTruth or TPLPKL_file [savefolder]"
+	print "python2 PostProcessDistMatrix.py groundTruth or TPLPKL_file [savefolder]"
 	print "	the input file shall end with .native.pkl or .tpl.pkl"
 	print "	savefolder: the folder for result save, default current work directory"
 	print "		the result file has the same name as the input file, so if you do not want to overwrite the input file, "

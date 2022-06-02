@@ -21,7 +21,7 @@ def str_display(ls):
 if __name__ == "__main__":
 
 	if len(sys.argv) != 4:
-    		print 'python CalcMCCF1.py pred_matrix_file distcb_matrix_file target'
+    		print 'python2 CalcMCCF1.py pred_matrix_file distcb_matrix_file target'
 		print '      Both matrix files are text format with L lines and each line has L columns where L is the protein sequence length'
     		exit(1)
 

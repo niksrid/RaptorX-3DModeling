@@ -10,7 +10,7 @@ from Common.LoadTPLTGT import load_tgt as LoadTGT
 ## this script evaluates the predicted secondary structure in TGT file using information in TPL file as ground truth
 
 def Usage():
-	print 'python BatchEvaluatePropertyFromTGTTPL.py proteinList tgt_dir tpl_dir'
+	print 'python2 BatchEvaluatePropertyFromTGTTPL.py proteinList tgt_dir tpl_dir'
 	print '	This script evaluates the accuracy of the predicted secondary structure in tgt/tgt.pkl files using ground truth in .tpl.pkl or .native.pkl files'
 	print '	tgt_dir: the folder for tgt or tgt.pkl files'
 	print '	tpl_dir: the folder for tpl.pkl files or .native.pkl files'

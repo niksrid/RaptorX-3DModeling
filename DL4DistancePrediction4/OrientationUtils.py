@@ -140,7 +140,7 @@ def DeriveOriContactMatrix(predOriMatrix, response):
 	return contactMatrix
 		
 
-## predOriMatrices is a python dict, each item is an predicted orientation matrix
+## predOriMatrices is a python2 dict, each item is an predicted orientation matrix
 def DeriveContactMatrices(predOriMatrices):
 
 	contactMatrices = dict()

@@ -45,7 +45,7 @@ normalize=$DistanceFoldingHome/Helpers/Normalize.py
 if [ -s $scorefile ]; then
 	processID=$$	
 	sort -k2,2 -g $scorefile > $scorefile.$processID
-	python $normalize $scorefile.$processID $scorefile
+	python2 $normalize $scorefile.$processID $scorefile
 	rm -f $scorefile.$processID
 	echo "All model scores are saved to $scorefile"
 fi

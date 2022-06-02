@@ -7,7 +7,7 @@ from DL4PropertyPrediction import PropertyUtils
 from GenPropertyFeaturesFromTPLPKL import LoadTrainData4Properties
 
 def Usage():
-	print 'python BatchGenPropertyFeaturesFromTPLPKL.py proteinListFile tplpklDir'
+	print 'python2 BatchGenPropertyFeaturesFromTPLPKL.py proteinListFile tplpklDir'
 	print '	tplpklDir: the folder for tpl.pkl files generated for template-based modeling'
 
 def main(argv):

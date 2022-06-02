@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## This script installs evcouplings for jackhmmer. Looks like that evcouplings works with only python 3.5, but the latest Biopython only supports python 3.6.
+## This script installs evcouplings for jackhmmer. Looks like that evcouplings works with only python2 3.5, but the latest Biopython only supports python2 3.6.
 ## Need to figure out how to fix this issue later.
 
 ## We assume the installation folder of anaconda or miniconda is $HOME/anaconda2 or $HOME/miniconda2, respectively.
@@ -19,7 +19,7 @@ fi
 conda remove --name evfold --all -y
 
 # create environment
-conda create --name evfold python=3.5 -y
+conda create --name evfold python2=3.5 -y
 source activate evfold
 
 # pip install evcouplings

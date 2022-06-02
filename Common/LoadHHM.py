@@ -5,7 +5,7 @@ import cPickle
 
 from SequenceUtils import AALetter2OrderOf1LetterCode, AA1LetterOrder23LetterOrder, DetectMultiHIS
 """
-This script reads an .hhm file and save it as a python dict().
+This script reads an .hhm file and save it as a python2 dict().
 To use the position-specfic frequency matrix, please use the keyword PSFM.
 To use the position-specific scoring matrix, please use the keyword PSSM.
 PSFM and PSSM are derived from the HMM block, so there is no need to directly use the keys containing 'hmm'.
@@ -302,7 +302,7 @@ def load_hhm(hhmfile):
 ## for test only
 if __name__ == "__main__":
         if len(sys.argv) < 2:
-                print 'python LoadHHM.py hhm_file'
+                print 'python2 LoadHHM.py hhm_file'
                 print ' the input file shall end with .hhm'
                 exit(1)
 

@@ -44,5 +44,5 @@ do
 		continue
 	fi
 	echo contact pred accuracy of $predFile
-	python $program $predFile $truth $target
+	python2 $program $predFile $truth $target
 done

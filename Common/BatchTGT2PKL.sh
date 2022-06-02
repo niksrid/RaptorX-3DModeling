@@ -33,7 +33,7 @@ do
 	do
 		numRunningJobs=`ps -x | grep ${keywords} | grep -v ${myself} | wc -l`
                 if [ $numRunningJobs -lt `expr $numAllowedJobs + 1 ` ]; then
-        		python $program $TGTDir/$i.tgt $RESDIR &
+        		python2 $program $TGTDir/$i.tgt $RESDIR &
 			break
 		else
 			a=`expr $RANDOM % 3 `

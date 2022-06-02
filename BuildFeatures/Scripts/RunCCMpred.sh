@@ -79,7 +79,7 @@ numLines=`expr $numLines / 2 `
 if [ $numLines -gt $numAllowedSeqs ]; then
 	echo "WARNING: #sequences in a3m: " $numLines ", exceeds #allowed sequences: " $numAllowedSeqs
         $DistFeatureHome/bin/meff_filter -i $input -o $outDir/$target.a3m_filter -n $numAllowedSeqs -c 150000
-	#python $DistFeatureHome/Helpers/SampleA3MByNumber.py $input $numAllowedSeqs $outDir/${target}.a3m_filter
+	#python2 $DistFeatureHome/Helpers/SampleA3MByNumber.py $input $numAllowedSeqs $outDir/${target}.a3m_filter
         $DistFeatureHome/util/A3M_To_PSI $outDir/$target.a3m_filter $tmpa2mfile
 	ecode=$?
 else

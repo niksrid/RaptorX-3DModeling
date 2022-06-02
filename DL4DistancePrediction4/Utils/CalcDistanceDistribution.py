@@ -10,7 +10,7 @@ from DL4DistancePrediction4.utils import PrettyPrint
 if __name__ == "__main__":
 
 	if len(sys.argv)<3:
-		print 'Usage: python CalcDistanceDistribution.py proteinListFile folder4DistMatrix'
+		print 'Usage: python2 CalcDistanceDistribution.py proteinListFile folder4DistMatrix'
 		print '     This script calculates distance distribution from a list of native distance matrices'
 		print '     folder4DistMatrix is the folder containing all the native distance matrix files with a name like proteinName.native.pkl or proteinName.atomDistMatrix.pkl'
 		print '	    It is fine if folder4DistMatrix does not contain files for some proteins in proteinListFile'

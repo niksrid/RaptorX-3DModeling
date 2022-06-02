@@ -7,7 +7,7 @@ import ContactUtils
 import DistanceUtils
 
 def Usage():
-	print 'python FixDistanceProb.py -i pkl_files'
+	print 'python2 FixDistanceProb.py -i pkl_files'
 	print '   You may provide a list of predictedDistMatrix.pkl as input. They shall be separated by ;'
 
 

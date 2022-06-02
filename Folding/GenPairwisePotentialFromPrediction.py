@@ -12,7 +12,7 @@ from DL4DistancePrediction4 import DistanceUtils
 from DL4DistancePrediction4 import RangeNWeight
 
 def Usage():
-    	print 'python GenPairwisePotentialFromPrediction.py [-a labelNames] [-w weightScheme] [-r refType | -f refFile] [-o] [-l minPotential] [-u maxPotential] [ -s savefile ] predidctedPairwiseDistribution_PKL'
+    	print 'python2 GenPairwisePotentialFromPrediction.py [-a labelNames] [-w weightScheme] [-r refType | -f refFile] [-o] [-l minPotential] [-u maxPotential] [ -s savefile ] predidctedPairwiseDistribution_PKL'
 	print '  This scripts convert predicted distance/orientation distribution to potential and save it in PKL format'
     	print '      The input is a PKL file for predicted distance/orientation probability, e.g. target.predictedDistMatrix.pkl or target.mergedDistMatrix.pkl where target is a protein name'
     	print '      This file is a tuple of 6 or 7 items: name, primary sequence, predDistProb, predContactMatrix, labelWeight, labelDistribution and refDistProb (optional)'
