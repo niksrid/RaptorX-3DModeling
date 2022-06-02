@@ -11,8 +11,8 @@ from DL4DistancePrediction4.utils import PrettyPrint
 if __name__ == "__main__":
 
 	if len(sys.argv)<3:
-		#print 'Usage: python2 CalcOrientationDistribution.py proteinListFile folder4OrientationMatrix folder4DistMatrix'
-		print 'Usage: python2 CalcOrientationDistribution.py proteinListFile folder4Native'
+		#print 'Usage: python CalcOrientationDistribution.py proteinListFile folder4OrientationMatrix folder4DistMatrix'
+		print 'Usage: python CalcOrientationDistribution.py proteinListFile folder4Native'
 		print '     This script calculates dihedral/angle distribution from a list of native orientation matrices'
 		print '     folder4OrientationMatrix is the folder containing all the native orientation matrix files. Each file has name like proteinName.atomOrientationMatrix.pkl'
 		print '     folder4DistMatrix is the folder containing all the native distance matrix files. Each file has name like proteinName.atomDistMatrix.pkl'

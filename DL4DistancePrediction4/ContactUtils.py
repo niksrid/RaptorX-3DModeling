@@ -344,7 +344,7 @@ def TopAccuracy(pred=None, truth=None, ratio=[1, 0.5, 0.2, 0.1], contactCutoff=8
 
 ## Evaluate contact prediction for a single protein. 
 ## predictedContactMatrix is a dictionary in which each key is an atom pair, e.g., CbCb, CaCa, CgCg
-## native is a python2 dict() which has distance martrices for several atom pair types
+## native is a python dict() which has distance martrices for several atom pair types
 #def EvaluateSingleContactPrediction(predictedContactMatrix, nativefile):
 def EvaluateSingleContactPrediction(predictedContactMatrix, native):
 
@@ -364,7 +364,7 @@ def EvaluateSingleContactPrediction(predictedContactMatrix, native):
 	return accuracy
 
 ## pred is a 2D contact matrix, each entry has a prob value
-## native is a python2 dict() which has distance matrices for several atom pairs
+## native is a python dict() which has distance matrices for several atom pairs
 #def EvaluateSingleCbCbContactPrediction(pred, nativefile):
 def EvaluateCbCbContactPrediction(pred, native):
 

@@ -4,7 +4,7 @@ import os
 import cPickle
 
 if len(sys.argv) < 2:
-	print 'Usage: python2 VerifyDistMatrix.py target_name'
+	print 'Usage: python VerifyDistMatrix.py target_name'
 	exit(-1)
 
 target = sys.argv[1]

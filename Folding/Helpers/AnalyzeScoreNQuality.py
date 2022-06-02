@@ -3,7 +3,7 @@ import sys
 import numpy as np
 
 def Usage():
-	print 'python2 AnalyzeScoreNQuality.py scorefile qualityfile'
+	print 'python AnalyzeScoreNQuality.py scorefile qualityfile'
 	
 if len(sys.argv)<3:
 	Usage()

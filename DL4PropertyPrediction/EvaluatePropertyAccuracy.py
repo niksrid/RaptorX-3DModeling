@@ -9,7 +9,7 @@ import config
 import PropertyUtils
 
 def Usage():
-    	print 'python2 EvaluatePropertyAccuracy.py prediction_PKL ground_truth_PKL'
+    	print 'python EvaluatePropertyAccuracy.py prediction_PKL ground_truth_PKL'
 	print '  This script evaluate property prediction accuracy for a single protein'
     	print '  prediction_PKL: a predicted property file with name like XXX.predictedProperty.pkl'
     	print '     This file contains a tuple of 4 items: name, primary sequence, pred4prob, pred'

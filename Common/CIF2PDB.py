@@ -1,10 +1,10 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 """
 Script to convert mmCIF files to PDB format.
 
-usage: python2 cif2pdb.py ciffile [pdbfile]
+usage: python cif2pdb.py ciffile [pdbfile]
 
-Requires python2 BioPython (`pip install biopython`). It should work with recent version of python2 2 or 3.
+Requires python BioPython (`pip install biopython`). It should work with recent version of python 2 or 3.
 
 @author Spencer Bliven <spencer.bliven@gmail.com>
 """

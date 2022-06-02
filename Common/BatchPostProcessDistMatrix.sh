@@ -15,7 +15,7 @@ for i in `cat $proteinList`
 do
 	for f in $inDir/${i}.*pkl
 	do
-		python2 $program $f $outDir
+		python $program $f $outDir
 	done
 done
 

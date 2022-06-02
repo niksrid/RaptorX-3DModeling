@@ -8,7 +8,7 @@ from Common.LoadTPLTGT import load_tgt as LoadTGT
 from GenPropertyFeaturesFromTGT import LoadTestData4Properties
 
 def Usage():
-	print 'python2 GenPropertyFeaturesFromMultiTGTs.py proteinName tgtFile1 tgtFile2 tgtFile3 ...'
+	print 'python GenPropertyFeaturesFromMultiTGTs.py proteinName tgtFile1 tgtFile2 tgtFile3 ...'
 	print '\tThis script generates a property feature file (in PKL) from a set of tgt files of the same protein'
 	print '\ttgtFiles: the tgt files generated for template-based modeling'
 

@@ -9,7 +9,7 @@ import config
 import DistanceUtils
 
 def Usage():
-    	print 'python2 ReducePredictedDistMatrix.py [-r targetResponse | -s savefolder] predictedDistMatrix_PKL_file '
+    	print 'python ReducePredictedDistMatrix.py [-r targetResponse | -s savefolder] predictedDistMatrix_PKL_file '
 	print '  This script converts a predicted distance prob matrix from a finer-grained discretization scheme to a coarser-grained one'
 	print '       e.g., from 52 distance bins to 12 distance bins'
 	print '	 -r: the resultant distance matrix is only for the target response, e.g., CbCb_Discrete14C (default), CbCb+CaCa_Discrete14C, AllAP_Discrete14C'

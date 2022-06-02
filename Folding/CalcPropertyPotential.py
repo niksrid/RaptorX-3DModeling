@@ -12,7 +12,7 @@ from DL4PropertyPrediction import config, PropertyUtils
 from DL4PropertyPrediction.Utils.CalcPhiPsiFromPDB import CalcPhiPsi
 
 def Usage():
-        print 'python2 CalcPropertyPotential.py -i PDB_file -e predidctedProperty_PKL [-a propertyType] [-f funcType] [-d]'
+        print 'python CalcPropertyPotential.py -i PDB_file -e predidctedProperty_PKL [-a propertyType] [-f funcType] [-d]'
 	print '  -i: the input PDB file for a 3D model '
         print '  -e: specify the propety (predicted by DL) in a PKL file with name like target.predictedProperty.pkl where target is a protein name'
         print '         This file contains a tuple of at least 3 items: name, primary sequence and predicted parameters for property distribution'

@@ -9,7 +9,7 @@ sys.path.append(os.path.join(os.environ['ModelingHome'], 'Common') )
 from ReadProteinFeatures import ReadFeatures
 
 def Usage():
-    print 'python2 ReadOneProteinFeatures.py proteinName featureFolder1 featureFolder2 featureFolder3 ... '
+    print 'python ReadOneProteinFeatures.py proteinName featureFolder1 featureFolder2 featureFolder3 ... '
     print '  This script reads several sets of independent features for a single protein and save the results as a list of features in a PKL file.'
     print '  Each feature folder contains a set of features.'
     print '  Only input features for distance prediciton are loaded. To load the ground truth distance matrix, please use code in Util/.'

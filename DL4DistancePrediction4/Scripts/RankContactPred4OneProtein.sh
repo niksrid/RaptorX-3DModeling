@@ -34,5 +34,5 @@ fi
 
 predFiles=`ls $inputFolder/${protein}*predictedDistMatrix.pkl | grep -v ${protein}D | grep -v ${protein}d `
 if [ ! -z "$predFiles" ]; then
-	python2 $program $predFiles
+	python $program $predFiles
 fi

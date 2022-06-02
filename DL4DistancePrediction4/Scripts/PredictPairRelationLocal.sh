@@ -200,8 +200,8 @@ else
         GPU=cuda$GPU
 fi
 
-THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python2 $program $arguments
+THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python $program $arguments
 if [ $? -ne 0 ]; then
-        echo "ERROR: failed to run python2 $program $arguments"
+        echo "ERROR: failed to run python $program $arguments"
         exit 1
 fi

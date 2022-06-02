@@ -9,7 +9,7 @@ from utilsNoT import str_display
 if __name__ == "__main__":
 
 	if len(sys.argv) < 3:
-    		print 'python2 EvaluateContactAccuracyPKL.py predDistMatrixFile_pkl groudTruthFile_pkl [targetName]'
+    		print 'python EvaluateContactAccuracyPKL.py predDistMatrixFile_pkl groudTruthFile_pkl [targetName]'
 		print '	This script evaluates the accuracy of predicted contact matrix by comparing it with native contact matrix'
 		print '	predDistMatrixFile: the predicted distance/orientation matrix file in cPickle format, usually ending with .predictedDistMatrix.pkl '
 		print '	     this file shall be a tuple of at least 6 items: name, sequence, predictedDistProbMatrix, predictedContactProbMatrix, labelWeight and labelDistribution'

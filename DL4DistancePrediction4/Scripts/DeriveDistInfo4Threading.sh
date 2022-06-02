@@ -47,14 +47,14 @@ if [ ! -f $EPADprogram ]; then
 fi
 
 ## convert the distance matrix to 12C, and the 12C matrix to epad_prob
-python2 $reduceProgram -r CbCb_Discrete12C -s $ResDir $inputfile
+python $reduceProgram -r CbCb_Discrete12C -s $ResDir $inputfile
 
 target=`basename $inputfile .predictedDistMatrix.pkl`
 $EPADprogram $ResDir/${target}.predictedDistMatrix412C.pkl $ResDir/${target}.epad_prob
 rm -f $ResDir/${target}.predictedDistMatrix412C.pkl
 
 ## the CbCb_Discrete14C matrix is needed for the new version of DeepThreader
-python2 $reduceProgram -r CbCb_Discrete14C -s $ResDir $inputfile
+python $reduceProgram -r CbCb_Discrete14C -s $ResDir $inputfile
 
 potProgram=$DistanceFoldingHome/GenDistPotential4Threading.sh
 if [ ! -x $potProgram ]; then

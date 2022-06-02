@@ -47,7 +47,7 @@ if [ "$MSA" == "all" ]; then
 	done
 
 	#echo "tgtFiles= $tgtFiles"
-	python2 $DL4PropertyPredHome/GenPropertyFeaturesFromMultiTGTs.py ${target} $tgtFiles
+	python $DL4PropertyPredHome/GenPropertyFeaturesFromMultiTGTs.py ${target} $tgtFiles
 
 	if [ $? -ne 0 ]; then
 		echo "ERROR: Failed to collect input feature files for property prediction for $target !"

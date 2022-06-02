@@ -23,7 +23,7 @@ def GetValidChains(structure, chainNames):
 	return available
 
 if len(sys.argv) < 3:
-	print 'python2 SelectProteinChains.py pdbfile/mmciffile chainNames [ResDir]'
+	print 'python SelectProteinChains.py pdbfile/mmciffile chainNames [ResDir]'
 	print '	this script may extract one or multiple protein structure chains from an input PDB or CIF file'
 	print '	chainNames: one or multiple chain names separated by comma, e.g, A,B, 1,2, a, Aa,Ab, default empty'
 	print '	one result file will be generated for each available chain'

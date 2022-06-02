@@ -32,7 +32,7 @@ workDir=$(mktemp -d -t tmpModellerDir4${bname}-XXXXXXXXXX)
 currDir=`pwd`
 
 cd $workDir
-python2 $program $aliFile $PDBDir
+python $program $aliFile $PDBDir
 target=`echo $bname | cut -f1 -d'-' `
 if [ ! -f $target.B99990001.pdb ]; then
 	echo "ERROR: failed to generate a 3D model from $aliFile"

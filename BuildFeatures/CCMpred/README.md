@@ -55,7 +55,7 @@ You should find the compiled version of CCMpred at `bin/ccmpred`. To check if th
 
 ## Useful scripts
 
-The `scripts/` subdirectory contains some python2 scripts you might find useful - please make sure both NumPy and BioPython are installed to use them!
+The `scripts/` subdirectory contains some python scripts you might find useful - please make sure both NumPy and BioPython are installed to use them!
 
   * `convert_alignment.py` - Use BioPython's `Bio.SeqIO` to convert a variety of alignment formats (FASTA, etc.) into the CCMpred alignment input format
   * `top_couplings.py` - Extract the top couplings from an output contact maps in a list representation

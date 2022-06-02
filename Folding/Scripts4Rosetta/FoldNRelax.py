@@ -17,7 +17,7 @@ from pyrosetta.rosetta.protocols.minimization_packing import MinMover
 #from ScoreOneModel import PrintScore
 
 def Usage():
-	print 'python2 FoldNRelax.py inputFile cstFile [-I extraInput ] [ -w weight4distance ] [ -d weight4dihedral ] [-a weight4angle] [-e w4beta] [ -n ncycles4initFolding ] [-t tolerance] [-s savefolder ] [-r] [-b] [-q] [-p]'
+	print 'python FoldNRelax.py inputFile cstFile [-I extraInput ] [ -w weight4distance ] [ -d weight4dihedral ] [-a weight4angle] [-e w4beta] [ -n ncycles4initFolding ] [-t tolerance] [-s savefolder ] [-r] [-b] [-q] [-p]'
 	print '       inputFile: a file ending with .fasta, .seq, and .pdb'
 	print '       cstFile: a constraint file including all kinds of constraints acceptable by Rosetta'
 	print '	      -I: when this option specified, cstFile shall be interpreted as the predicted dist/orientation matrix file instead of Rosetta constraint file'

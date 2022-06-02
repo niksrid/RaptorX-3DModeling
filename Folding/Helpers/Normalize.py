@@ -5,7 +5,7 @@ import numpy as np
 ## this script normalizes all columns except the first in a file
 
 def Usage():
-	print 'python2 Normalize.py textfile [savefile]'
+	print 'python Normalize.py textfile [savefile]'
 
 if len(sys.argv) < 2:
 	Usage()

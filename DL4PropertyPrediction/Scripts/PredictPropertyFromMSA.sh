@@ -87,7 +87,7 @@ else
 fi
 
 ## convert hhmfile to a feature file for property prediction
-python2 $DL4PropertyPredHome/GenPropertyFeaturesFromMultiHHMs.py $target $hhmfile $ResultDir
+python $DL4PropertyPredHome/GenPropertyFeaturesFromMultiHHMs.py $target $hhmfile $ResultDir
 
 if [ ! -f $ResultDir/$target.propertyFeatures.pkl ]; then
 	echo "ERROR: failed to generate $ResultDir/$target.propertyFeatures.pkl "

@@ -7,7 +7,7 @@ import PropertyUtils
 from Common.LoadTPLTGT import load_tgt as LoadTGT
 
 def Usage():
-	print 'python2 GenPropertyFeaturesFromTGT.py tgt_file'
+	print 'python GenPropertyFeaturesFromTGT.py tgt_file'
 	print '	This script generates input features from TGT file for property prediction'
 	print '	tgt_file: a tgt file generated for template-based modeling'
 

@@ -242,7 +242,7 @@ def ReadFeatures(p=None, DataSourceDir=None):
     return OneProtein
 
 def Usage():
-    print 'python2 ReadProteinFeatures.py proteinListFile featureMetaFolder '
+    print 'python ReadProteinFeatures.py proteinListFile featureMetaFolder '
     print '  proteinListFile: the file containing a list of proteins, each protein name in a line'
     print '  featureMetaFolder: specify a folder containing all the features, under which each protein has an independent feature folder named after feat_proteinName_contact'
     print '  This script reads only protein features for distance prediciton. To load the true distance matrix, please use AddAtomDistMatrix.py in Utils/ '

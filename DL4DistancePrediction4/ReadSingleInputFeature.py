@@ -7,7 +7,7 @@ import cPickle
 from ReadProteinFeatures import ReadFeatures
 
 def Usage():
-	print 'python2 ReadSingleInputFeature.py proteinName featureFolder [savefolder]'
+	print 'python ReadSingleInputFeature.py proteinName featureFolder [savefolder]'
     	print '  This script reads one set of input feature for a single protein and save the result as dict() in a PKL file.'
     	print '  Only input features are loaded. To load the ground truth matrices, please use code in Util/.'
 	print '	 The resultant file has name proteinName.inputFeatures.pkl and will be saved to savefolder'

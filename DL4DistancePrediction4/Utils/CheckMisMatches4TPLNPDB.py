@@ -6,7 +6,7 @@ import cPickle
 import glob
 
 def Usage():
-	print 'python2 CheckMisMatches4TPLNPDB.py folder4TPLCoordinates'
+	print 'python CheckMisMatches4TPLNPDB.py folder4TPLCoordinates'
 	print '	this script checks the number of mismatched residues between a template (*.hhm and *.tpl files) and its corresponding PDB file'
 	print '	the input is a folder containing all the TPL coordinate files. The TPL coordinates are extracted from PDB files by the TPL sequence '
 

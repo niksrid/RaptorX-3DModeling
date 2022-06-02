@@ -40,7 +40,7 @@ else
 fi
 
 ## convert hhmfile to a feature file for property prediction
-python2 $DL4PropertyPredHome/GenPropertyFeaturesFromMultiHHMs.py $target $hhmfile $ResultDir
+python $DL4PropertyPredHome/GenPropertyFeaturesFromMultiHHMs.py $target $hhmfile $ResultDir
 
 if [ ! -f $ResultDir/$target.propertyFeatures.pkl ]; then
 	echo "ERROR: failed to generate $ResultDir/$target.propertyFeatures.pkl "
@@ -60,7 +60,7 @@ cmd=`readlink -f $0 `
 cmdDir=`dirname $cmd`
 
 ## generate a tgt.pkl file from both hhmfile and predictedProperties.pkl
-python2 $cmdDir/HHM2TGT.py $hhmfile $ResultDir/$target.predictedProperties.pkl $ResultDir
+python $cmdDir/HHM2TGT.py $hhmfile $ResultDir/$target.predictedProperties.pkl $ResultDir
 
 if [ ! -f $ResultDir/$target.tgt.pkl ]; then
 	echo "ERROR: failed to generate $ResultDir/$target.tgt.pkl "

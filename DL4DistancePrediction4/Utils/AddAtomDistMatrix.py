@@ -6,10 +6,10 @@ import cPickle
 
 """
 This script merges distance prediction input features with atom distance matrices to form a new train/valid/test dataset for distance prediction
-Usage: python2 AddAtomDistMatrix.py distanceFeatures_PKL atomDistMatrixPKL_folder
+Usage: python AddAtomDistMatrix.py distanceFeatures_PKL atomDistMatrixPKL_folder
 """
 if len(sys.argv)<3:
-	print 'python2 AddAtomDistMatrix.py distanceFeatures_PKL atomDistMatrixPKL_folder'
+	print 'python AddAtomDistMatrix.py distanceFeatures_PKL atomDistMatrixPKL_folder'
 	print '       distanceFeautres_PKL is a PKL file containing a list of input features for distance prediction'
 	print '       atomDistMatrixPKL_folder is a folder containing the true distance matrices of all the proteins in distanceFeatures_PKL'
 	exit(1)

@@ -156,7 +156,7 @@ def Build3DModels(PIRfile, PDBDir, seqName=None, templateNames=None, maxCaCaDist
 	a.make()                            # do the actual homology modeling
 
 def Usage():
-	print 'python2 ModellerUtils.py [-q seqName] PIRfile/FASTAfile templatePDBDir'
+	print 'python ModellerUtils.py [-q seqName] PIRfile/FASTAfile templatePDBDir'
 
 
 if __name__ == "__main__":

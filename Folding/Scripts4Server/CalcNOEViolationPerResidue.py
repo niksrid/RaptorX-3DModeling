@@ -9,7 +9,7 @@ sys.path.append(os.path.join(os.environ['ModelingHome'], 'Common'))
 from LoadFASTA import LoadFASTAFile
 
 def Usage():
-	print "python2 CalcNOEViolationPerResidue.py seqFile modelFile restraintFile"
+	print "python CalcNOEViolationPerResidue.py seqFile modelFile restraintFile"
 	print "	      seqFile: the file for primary sequence in FASTA format"
 	print "	      modelFile: predicted 3D model file in PDB format"
 	print "	      restraintFile: the distance restraint file used to build the model, e.g., contact.tbl"

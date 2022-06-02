@@ -8,7 +8,7 @@ import sys
 import cPickle
 
 if len(sys.argv) < 4:
-	print 'Usage: python2 plotDistMatrixComparison.py targetName predDistBoundFile groundTruth_PKL'
+	print 'Usage: python plotDistMatrixComparison.py targetName predDistBoundFile groundTruth_PKL'
         print '\tpredDistBoundFile: the predicted distance bound file ending with .bound.pkl or bound.txt'
 	print '\tgroundTurth_PKL: the ground truth file ending with .native.pkl that contains experimental distance matrix information'
 	exit(1)

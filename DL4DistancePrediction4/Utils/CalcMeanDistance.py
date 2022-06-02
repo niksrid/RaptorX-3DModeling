@@ -46,7 +46,7 @@ if __name__ == "__main__":
 	maxDist = None
 
 	if len(sys.argv)<4:
-		print 'Usage: python2 CalcMeanDistance.py proteinListFile folder4DistMatrix min-max'
+		print 'Usage: python CalcMeanDistance.py proteinListFile folder4DistMatrix min-max'
 		print '     This script calculates the average distance in a distance interval defined by [min, max] from a list of native distance matrices'
 		print ' 		the average distance for each different sequence separation will be calculated'
 		print '     folder4DistMatrix is the folder containing all the native distance matrix files. Each file has name like proteinName.atomDistMatrix.pkl'

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 import numpy as np
 import pickle
 import sys
@@ -7,7 +7,7 @@ import os
 
 #------- usage -------#
 def Usage():
-    print('python2 DumpTPLPKL.py <TPL_pkl> <TPL_dump> <map_dump> ')
+    print('python DumpTPLPKL.py <TPL_pkl> <TPL_dump> <map_dump> ')
     print('TPL_pkl  : the input file of a pkl formated TPL')
     print('TPL_dump : the dumped PDB content in plain-text')
     print('map_dump : the dumped mapping between SEQRES and DSSP')
@@ -69,7 +69,7 @@ def main(argv):
     savefh.close()
 
 
-#-------------- python2 main ---------------#
+#-------------- python main ---------------#
 if __name__ == "__main__":
     main(sys.argv[1:])
 

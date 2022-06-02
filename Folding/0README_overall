@@ -13,7 +13,7 @@ seqid.a2m             : Multiple Sequence Alignment (MSA) in A2M format
 seqid.a3m             : Multiple Sequence Alignment (MSA) in A3M format
 
 seqid.predictedDistMatrix.pkl	: this file contains predicted contact/distance/orientation information. It is a tuple of 6 items and the first 4 items are seqName, primarySeq, predicted distance/orientation prob matrix, predicted contact matrix.
-			The 3rd and 4th items are python2 dictionary with keys like 'CbCb', 'NO', 'CaCa'. With key 'CbCb', you may obtain the predicted Cb-Cb distance probability matrix in the 3rd item and the predicted Cb-Cb contact probability matrix in the 4th item. 
+			The 3rd and 4th items are python dictionary with keys like 'CbCb', 'NO', 'CaCa'. With key 'CbCb', you may obtain the predicted Cb-Cb distance probability matrix in the 3rd item and the predicted Cb-Cb contact probability matrix in the 4th item. 
 		        The 3rd item also has predicted probability matrix for inter-residue orientation.
 
 seqid.gcnn	      : predicted contact matrix in text format

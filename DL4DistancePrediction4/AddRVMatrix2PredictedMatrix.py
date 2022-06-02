@@ -14,7 +14,7 @@ import OrientationUtils
 import getopt
 
 def Usage():
-    	print 'python2 AddRVMatrix2PredictedMatrix.py [-w weight | -s savefile ] predictedMatrixFile RVMatrixFile'
+    	print 'python AddRVMatrix2PredictedMatrix.py [-w weight | -s savefile ] predictedMatrixFile RVMatrixFile'
 	print '	This script adds a real-valued (native) matrix to a predicted dist/orientation matrix'
 	print '	-w: weight for the real-valued matrix'
 	print ' -s: file for result saving'

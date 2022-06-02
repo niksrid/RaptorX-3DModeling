@@ -91,8 +91,8 @@ else
 
 fi
 
-python2 $ScoreProgram $modelFolder $cstfile -s $savefile
+python $ScoreProgram $modelFolder $cstfile -s $savefile
 if [ $? -ne 0 ]; then
-	echo "ERROR: failed to run python2 $ScoreProgram $modelFolder $cstfile -s $savefile"
+	echo "ERROR: failed to run python $ScoreProgram $modelFolder $cstfile -s $savefile"
 	exit 1
 fi

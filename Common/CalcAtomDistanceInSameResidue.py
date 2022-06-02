@@ -6,7 +6,7 @@ from SelectAtoms import SelectCG
 from Bio.PDB.Polypeptide import three_to_one
 
 def Usage():
-	print 'python2 CalcAtomDistanceInSameResidue.py pdbfileList pdbfileFolder '
+	print 'python CalcAtomDistanceInSameResidue.py pdbfileList pdbfileFolder '
 	print '	this script calculates the N-O distance in the same residue'
 
 if len(sys.argv) < 3:

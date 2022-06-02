@@ -4,7 +4,7 @@ import numpy as np
 import cPickle
 
 if len(sys.argv) < 3:
-	print 'python2 CompareTwoMatrix.py file1_PKL file2_PKL'
+	print 'python CompareTwoMatrix.py file1_PKL file2_PKL'
 	exit(1)
 
 file1=sys.argv[1]

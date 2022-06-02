@@ -15,7 +15,7 @@ from config import Response2LabelType, Response2LabelName
 import getopt
 
 def Usage():
-    	print 'python2 TrainPropertyPredictor.py -n network_type -y response -c conv1d_hiddens -e logreg_hiddens -w halfWinSize -t trainfile -v validfile -p predfile -a trainAlgorithm -g regfactors -r restart_file -i numEpochs -s minibatchSize -k keyword_value'
+    	print 'python TrainPropertyPredictor.py -n network_type -y response -c conv1d_hiddens -e logreg_hiddens -w halfWinSize -t trainfile -v validfile -p predfile -a trainAlgorithm -g regfactors -r restart_file -i numEpochs -s minibatchSize -k keyword_value'
 
     	print '-n: specify a network type, e.g., SeqResNet1D (default). We may use 1d CNN or LSTM or their combination for 1d sequence.' 
 

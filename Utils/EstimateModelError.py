@@ -21,7 +21,7 @@ def is_tool(name):
     return True
 
 def Usage():
-	print 'python2 EstimateError.py [-o resultfile] targetModel refModelList1 refModelList2 refModelList3 ...'
+	print 'python EstimateError.py [-o resultfile] targetModel refModelList1 refModelList2 refModelList3 ...'
 	print '	This script estimates the global and per-atom quality of a target model by comparing it to a few lists of reference models'
 	print '	targetModel: a 3D model file (in PDB format) for quality assessment'
 	print '	refModelList: a file contains a list of reference models, each in one row. Multiple files can be used.'

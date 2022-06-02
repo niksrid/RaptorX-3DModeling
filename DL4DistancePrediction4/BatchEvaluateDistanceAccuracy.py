@@ -13,7 +13,7 @@ from utilsNoT import str_display
 import getopt
 
 def Usage():
-    	print 'python2 BatchEvaluateDistanceAccuracy.py poteinList predDistMatrix_PKL_folder ground_truth_folder [ -s minSeqSep]  [-c distCutoff for prediction] [ -d distCutoff for native]'
+    	print 'python BatchEvaluateDistanceAccuracy.py poteinList predDistMatrix_PKL_folder ground_truth_folder [ -s minSeqSep]  [-c distCutoff for prediction] [ -d distCutoff for native]'
 	print '  This script evaluate distance bound accuracy for a list of proteins in their predicted distance matrix files '
     	print '  predDistMatrix_PKL_folder: a folder containing predicted distance/orientation matrix with name like XXX.predictedDistMatrix.pkl'
     	print '     This file contains a tuple of at least 3 items: name, primary sequence, predDistMatrix'

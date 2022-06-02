@@ -191,7 +191,7 @@ if [ ! -d $ResultDir ]; then
 	mkdir -p $ResultDir
 fi
 
-command=" python2 $program -m $ModelFiles -p $proteinName -i $inputFolders -d $ResultDir "
+command=" python $program -m $ModelFiles -p $proteinName -i $inputFolders -d $ResultDir "
 if [ ! -z "$aliStr" -a ! -z "$tplStr" ]; then
 	command=$command" -a $aliStr -t $tplStr "
 fi

@@ -16,7 +16,7 @@ from Common import SequenceUtils
 ## this script can also be used to mix template-based distance prediction (for some domains with good templates) and template-free distance prediction (for domains without good templates)
 
 def Usage():
-	print 'python2 AssembleDistSubMatrix.py [-c | -g nativeDistMatrixFile | -n newName ] seqFile subMatrixFile1 subMatrixFile2 ...'
+	print 'python AssembleDistSubMatrix.py [-c | -g nativeDistMatrixFile | -n newName ] seqFile subMatrixFile1 subMatrixFile2 ...'
 	print '	seqFile is the original sequence file for the whole chain. Each subMatrixFile is a dist sub matrix for one domain. Overlapping among submatrices is allowed. '
 	print ' all matrx files shall have the same format as a .predictedDistMatrix.pkl file'
 	print ' That is, each file is a tuple of six items: name, primary sequence, predicted distance prob, predicted contact prob, labelWeights, reference probabilities'

@@ -14,7 +14,7 @@ from Common import SequenceUtils
 ## this script extracts a dist/contact/orientation submatrix of a multi-domain protein by domain sequence
 
 def Usage():
-	print 'python2 ExtractSubMatrix.py [ -s savefolder | -n name ] baseMatrixFile domainSeqFile'
+	print 'python ExtractSubMatrix.py [ -s savefolder | -n name ] baseMatrixFile domainSeqFile'
 	print '	This script extracts a dist/ori submatrix from baseMatrixFile by domain sequence'
 	print '	baseMatrixFile: the whole-chain dist/ori matrix file, ending with .predictedDistMatrix.pkl'
 	print '	domainSeqFile: a domain sequence file in FASTA format. It may consist of up to 2 sequence segments'

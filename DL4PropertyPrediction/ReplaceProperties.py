@@ -13,7 +13,7 @@ from copy import deepcopy
 ## this script can also be used to mix template-based property prediction with template-free prediction
 
 def Usage():
-	print 'python2 ReplaceProperties.py [ -g NativeLabelFile | -n newName ] basePropertyFile subPropertyFiles'
+	print 'python ReplaceProperties.py [ -g NativeLabelFile | -n newName ] basePropertyFile subPropertyFiles'
 	print '	basePropertyFile has the original complete property for the whole chain. Each subPropertyFile has property predicted for one domain'
 	print ' all files shall have the same format as a .predictedProperties.pkl file'
 	print ' That is, each file is a tuple of 4 items: name, primary sequence, predicted property prob, predicted property value'

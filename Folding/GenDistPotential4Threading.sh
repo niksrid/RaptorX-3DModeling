@@ -53,7 +53,7 @@ fi
 
 target=`basename $distFile | cut -f1 -d'.' `
 potFile=$savefolder/${target}.pairPotential.DFIRE16.pkl
-python2 $program -a CbCb -s $potFile $distFile 
+python $program -a CbCb -s $potFile $distFile 
 
 #echo $target
 #rawFile=$savefolder/${target}.pairPotential.DFIRE.18.1.61.Wt4D.pkl

@@ -10,7 +10,7 @@ from DL4DistancePrediction4 import OrientationUtils
 from Common import PDBUtils
 
 def Usage():
-        print 'python2 CalcPairPotential.py -i PDB_file -e potentialFile_PKL -a labelNames -s minSeqSep -m maxCstDist -d'
+        print 'python CalcPairPotential.py -i PDB_file -e potentialFile_PKL -a labelNames -s minSeqSep -m maxCstDist -d'
         print '  -i: an input PDB file *.pdb '
 	print '  -e: a protein-specific distance-based statistical potential in PKL format '
         print '  -a: label names (default CbCb), e.g., CbCb+CaCa+NO+TwoROri'

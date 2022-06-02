@@ -21,7 +21,7 @@ import Model4PropertyPrediction
 import getopt
 
 def Usage():
-    print 'python2 RunPropertyPredictor.py -m modelfiles -p predfiles [-d save_folder] [-g ground_truth_folder]'
+    print 'python RunPropertyPredictor.py -m modelfiles -p predfiles [-d save_folder] [-g ground_truth_folder]'
     print '-p: specify one or multiple files containing data to be predicted in PKL format, separated by semicolon'
     print '	 Each file is a list of proteins and each protein stored as a dictionary'
     print '-m: specify one or multiple model files in PKL format, separated by semicolon'

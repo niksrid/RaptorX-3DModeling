@@ -856,7 +856,7 @@ void WS_Pair_Mod_Single_Fasta_Simp(string &nam1,string &nam2,
 	string &mod_bin,string &pdb_root,string &pir_root,int MOL_NUM=1,int KEEP_FILE=0)
 {
 	string name;
-	string python2;
+	string python;
 	string ssstemp;
 	string command;
 	FILE *fp;
@@ -867,13 +867,13 @@ void WS_Pair_Mod_Single_Fasta_Simp(string &nam1,string &nam2,
 //	return;
 	name=nam1+"-"+nam2+".pir"; //this is alignment PIR file
 	ssstemp=nam1+"_"+nam2;
-	python2=ssstemp+".py";
-	fp=fopen(python2.c_str(),"wb");
+	python=ssstemp+".py";
+	fp=fopen(python.c_str(),"wb");
 	WS_Pair_Modeler_Python_Write(fp,nam1.c_str(),ssstemp.c_str(),name,pdb_root,MOL_NUM);
 	fclose(fp);
 //	return;
 	//modeller
-	command=mod_bin+" "+python2;
+	command=mod_bin+" "+python;
 	system(command.c_str());
 
 	//--------- multi_model -------//__110730__//

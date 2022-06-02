@@ -19,7 +19,7 @@ from PDBUtils import ExtractPDBSeq
 ##this script calculate dist matrix for a protein from its PDB file.  
 
 def Usage():
-	print 'python2 CalcAtomDistMatrixFromPDB.py pdb_file [AtomPairTypes]'
+	print 'python CalcAtomDistMatrixFromPDB.py pdb_file [AtomPairTypes]'
 	print '	      AtomPairTypes: the atom pairs to be used, default All'
 	print '	      This script calculates atomic distance matrix from a pdb file and also outputs a sequence file'
 

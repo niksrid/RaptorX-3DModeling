@@ -9,7 +9,7 @@ from Common.SequenceUtils import LoadFASTAFile, AA1LetterCode23LetterCode
 from Common.PDBUtils import ExtractCoordinatesBySeq
 
 def Usage():
-	print 'python2 GenInputInfo4SPICKER.py [-l ] [-s savefolder] [-c cutoff-method] seqFile [modelListFile / modelFolder]'
+	print 'python GenInputInfo4SPICKER.py [-l ] [-s savefolder] [-c cutoff-method] seqFile [modelListFile / modelFolder]'
 	print '	seqFile: the primary sequence file in FASTA format'
 	print '	modelListFile: a file for a list of models to be clustered'
 	print '	modelFolder: the folder of decoys to be clustered by spicker'

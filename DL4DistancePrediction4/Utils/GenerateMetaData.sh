@@ -51,27 +51,27 @@ cmdDir=`dirname $cmd`
 for gf in $groupName.train?.group.txt
 do
 	if [ $NoTemplate -eq 1 ]; then
-		python2 $cmdDir/GenerateMetaData.py $gf $SpecFile &
+		python $cmdDir/GenerateMetaData.py $gf $SpecFile &
 	else
-		python2 $cmdDir/GenerateMetaData.py $gf $SpecFile 2 &
+		python $cmdDir/GenerateMetaData.py $gf $SpecFile 2 &
 	fi
 done
 
 for gf in $groupName.valid?.group.txt
 do
 	if [ $NoTemplate -eq 1 ]; then
-		python2 $cmdDir/GenerateMetaData.py $gf $SpecFile 1 &
+		python $cmdDir/GenerateMetaData.py $gf $SpecFile 1 &
 	else
-		python2 $cmdDir/GenerateMetaData.py $gf $SpecFile 3 &
+		python $cmdDir/GenerateMetaData.py $gf $SpecFile 3 &
 	fi
 done
 
 for gf in $groupName.small?.group.txt
 do
 	if [ $NoTemplate -eq 1 ]; then
-		python2 $cmdDir/GenerateMetaData.py $gf $SpecFile 1 &
+		python $cmdDir/GenerateMetaData.py $gf $SpecFile 1 &
 	else
-		python2 $cmdDir/GenerateMetaData.py $gf $SpecFile 3 &
+		python $cmdDir/GenerateMetaData.py $gf $SpecFile 3 &
 	fi
 done
 

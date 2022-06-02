@@ -6,7 +6,7 @@ import PDBUtils
 from PDBUtils import CalcDistMatrix, PostProcessDistMatrix
 
 def Usage():
-	print "python2 FixDistMatrix.py groundTruth or TPLPKL_file pdbfile [savefolder]"
+	print "python FixDistMatrix.py groundTruth or TPLPKL_file pdbfile [savefolder]"
 	print "	the input file shall end with .native.pkl or .tpl.pkl"
 	print "	pdbfile: the structure file"
 	print "	savefolder: the folder for result save, default current work directory"

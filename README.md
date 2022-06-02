@@ -50,13 +50,13 @@ To predict contact/distance/orientation and fold a protein, you may simply run R
 1) anaconda or miniconda for Python 2.7
 
 If you have not installed any anaconda or miniconda, you may directly install anaconda or miniconda for Python 2.7.
-If you have already installed anaconda/miniconda for Python 3, you may create a virtual enviroment RaptorX by running "conda create --name RaptorX python2=2". 
+If you have already installed anaconda/miniconda for Python 3, you may create a virtual enviroment RaptorX by running "conda create --name RaptorX python=2". 
 Afterwards, switch to this virtual environment by command "conda activate RaptorX" to install the required packages and run RaptorX. 
-See https://docs.python2.org/3/tutorial/venv.html for an introduction of virtual environment.
+See https://docs.python.org/3/tutorial/venv.html for an introduction of virtual environment.
 
 Install numpy by "conda install numpy".
 
-Install msgpack-python2 by "conda install -c anaconda msgpack-python2"; it may not work if you intall it through pip.
+Install msgpack-python by "conda install -c anaconda msgpack-python"; it may not work if you intall it through pip.
 
 2) Biopython (https://biopython.org/)
 
@@ -86,7 +86,7 @@ In principle, Theano can also run without GPUs, but some minor revisions are nee
 Needed for train and run deep learning models for distance/orientation prediction.
 
 Download by "git clone https://github.com/crowsonkb/shared_ndarray.git";
-cd to shared_ndarray/ and then run "python2 setup.py install".
+cd to shared_ndarray/ and then run "python setup.py install".
 
 ## Required tools and sequence databases for MSA generation ##
 
@@ -101,11 +101,11 @@ It is available at https://github.com/debbiemarkslab/EVcouplings . Although the 
 
 Step 1: Download the package by running "git clone https://github.com/debbiemarkslab/EVcouplings.git". Suppose that it is located at $HOME/EVcouplings. 
 
-Step 2: Run "conda create -n evfold anaconda python2=3" to create a virtual environment and then switch to this environment by running "conda activate evfold".
+Step 2: Run "conda create -n evfold anaconda python=3" to create a virtual environment and then switch to this environment by running "conda activate evfold".
 
-Step 3: cd to $HOME/EVcouplings and run "python2 setup.py install" to install the whole package.
+Step 3: cd to $HOME/EVcouplings and run "python setup.py install" to install the whole package.
 
-Note that EVcouplings runs on python2 3 while this version of RaptorX runs on python2 2.
+Note that EVcouplings runs on python 3 while this version of RaptorX runs on python 2.
 Without jackhmmer, you may still run RaptorX by generating MSAs using HHblits only.
 The sequence database for jackhmmer is uniref90.fasta, which can be downloaded from UniProt.
 
@@ -134,7 +134,7 @@ That is, they are not needed if you just want to predict SS/ACC/angle and contac
 
 It is needed to build 3D models of a protein sequence from predicted distance/orientation and phi/psi angles.
 Please download the version supporting Python 2.7 and unpack it. Supposing it is located at PyRosetta4.Release.python27.linux.release-224/,
-cd to PyRosetta4.Release.python27.linux.release-224/setup/ and run "python2 setup.py install".
+cd to PyRosetta4.Release.python27.linux.release-224/setup/ and run "python setup.py install".
 
 2) GNU parallel (optional, but recommended for running folding jobs on a Linux workstation)
 

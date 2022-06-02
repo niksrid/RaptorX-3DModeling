@@ -19,7 +19,7 @@ from Common import SequenceUtils
 ## when one group does not have any p, the group name is used as the protein name
 
 def Usage():
-	print 'python2 GenerateMetaData.py groupFile inputInfoFile [flag]'
+	print 'python GenerateMetaData.py groupFile inputInfoFile [flag]'
 	print '	groupFile: see the top comment of this script for format'
 	print '	inputInfoFile: a specification file containing all necessary file path information'
 	print '	the resultant file is saved as XXX.json where XXX is the basename of groupFile'

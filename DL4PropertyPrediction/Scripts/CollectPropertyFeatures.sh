@@ -76,7 +76,7 @@ do
 	fi
 done
 
-python2 $DL4PropertyPredHome/GenPropertyFeaturesFromMultiHHMs.py ${target} $hhmFiles $resDir
+python $DL4PropertyPredHome/GenPropertyFeaturesFromMultiHHMs.py ${target} $hhmFiles $resDir
 if [ $? -ne 0 ]; then
 	echo "ERROR: failed to collect property feature files for $target !"
 	exit 1

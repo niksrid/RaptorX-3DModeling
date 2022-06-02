@@ -7,7 +7,7 @@ import PDBUtils
 
 if __name__ == "__main__":
 	if len(sys.argv) < 2:
-		print 'python2 CalcGroundTruthFromPDBChain.py pdbFile [chainName]'
+		print 'python CalcGroundTruthFromPDBChain.py pdbFile [chainName]'
 		print '	this script calculates protein properties, distance and orientation matrices from a PDB file and a chainName'
 		print '	chainName is used to determine which chain shall be selected from PDB file, default A'
 		print ' save the result to a cPickle file and the corresponding sequence to a FASTA file'

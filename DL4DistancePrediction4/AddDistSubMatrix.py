@@ -16,7 +16,7 @@ from copy import deepcopy
 ## it works when there are overlapping sequence segments between domains (when the domain boundary is not very clear)
 
 def Usage():
-	print 'python2 AddDistSubMatrix.py [ -s savefolder | -n name ] baseMatrixFile subMatrixFiles'
+	print 'python AddDistSubMatrix.py [ -s savefolder | -n name ] baseMatrixFile subMatrixFiles'
 	print '	This script adds a dist/ori submatrix onto the orignal dist/ori matrix'
 	print '	It can also be used to mix predicted distance/ori prediction for possible domains'
 	print '	baseMatrixFile: the original complete matrix for the whole chain, ending with .predictedDistMatrix.pkl'

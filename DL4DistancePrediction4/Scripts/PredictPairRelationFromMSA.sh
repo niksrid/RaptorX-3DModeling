@@ -145,7 +145,7 @@ if [ $ModelFiles == "" ]; then
 	exit 1
 fi
 
-command=" python2 $program -m $ModelFiles -p $inputFeature -d $ResultDir "
+command=" python $program -m $ModelFiles -p $inputFeature -d $ResultDir "
 if [ $# -eq 3 ]; then
 	command=$command" -a $aliFile -t $tplFile "
 fi

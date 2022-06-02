@@ -133,7 +133,7 @@ if [ ! -f "$out_root/$pot_file" ]; then
 	numLines=`wc -l $out_root/$a2m_file | cut -f1 -d' '`
 	if [ $numLines -gt 50000 ]; then
 		echo "WARNING: calculating $out_root/$pot_file by sampling 50000 seqs from $out_root/$a2m_file"
-		python2 $DistFeatureHome/Helpers/SampleA2MByNumber.py $out_root/$a2m_file 50000 $out_root/${a2m_file}.sampled
+		python $DistFeatureHome/Helpers/SampleA2MByNumber.py $out_root/$a2m_file 50000 $out_root/${a2m_file}.sampled
 		cp $out_root/$a2m_file $out_root/${a2m_file}.original
 		cp $out_root/${a2m_file}.sampled $out_root/$a2m_file
 		$BinDir/alnstats_omp $out_root/${a2m_file} $relnam.ws1 $out_root/$pot_file
@@ -161,7 +161,7 @@ if [ ! -f "$out_root/$tgt_file" ]; then
 	numLines=`wc -l $out_root/$a3m_file | cut -f1 -d' '`
 	if [ $numLines -gt 100000 ]; then
 		echo "WARNING: converting A3M to TGT by sampling 50000 seqs from $out_root/$a3m_file"
-		python2 $DistFeatureHome/Helpers/SampleA3MByNumber.py $out_root/$a3m_file 50000 $out_root/${a3m_file}.sampled
+		python $DistFeatureHome/Helpers/SampleA3MByNumber.py $out_root/$a3m_file 50000 $out_root/${a3m_file}.sampled
 		cp $out_root/$a3m_file $out_root/${a3m_file}.original
 		cp $out_root/${a3m_file}.sampled $out_root/$a3m_file
 		$DistFeatureHome/util/A3M_To_TGT -i $out_root/$fasta_file -I $out_root/${a3m_file} -o $out_root/$relnam.tgt -t $tmp 1> $relnam.ws1 2> $relnam.ws2
@@ -208,9 +208,9 @@ if [ ! -f "$out_root/$relnam.diso" ]; then
         tail -n+2 $out_root/$acc_file | awk '{if(NF==8){print $1" "$2" . 0"}else{print $0}}'  > $out_root/$diso_file
 fi
 
-python2 $DL4DistancePredHome/ReadSingleInputFeature.py $relnam $out_root $out_root
+python $DL4DistancePredHome/ReadSingleInputFeature.py $relnam $out_root $out_root
 if [ $? -ne 0 ]; then
-	echo "ERROR: failed to run python2 $DL4DistancePredHome/ReadSingleInputFeature.py $relnam $out_root $out_root"
+	echo "ERROR: failed to run python $DL4DistancePredHome/ReadSingleInputFeature.py $relnam $out_root $out_root"
 	exit 1
 fi
 

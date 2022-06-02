@@ -10,7 +10,7 @@ import Metrics
 if __name__ == "__main__":
 
 	if len(sys.argv) != 4:
-    		print 'python2 BatchCalcMCCF1.py proteinListFile predFolder nativeFolder'
+    		print 'python BatchCalcMCCF1.py proteinListFile predFolder nativeFolder'
 		print '      The input files are in PKL format. The pred file and native file shall end with .predictedDistMatrix.pkl and .native.pkl, respectively'
     		exit(1)
 

@@ -98,7 +98,7 @@ def CreateSequenceNums(imglist, imglens):
 
 #---------- main --------#
 if len(sys.argv) < 3:
-	print 'python2 PlotContactMap.py targetName.CASP.rr targetLen [result_dir]'
+	print 'python PlotContactMap.py targetName.CASP.rr targetLen [result_dir]'
 	print '\ttargetName.CASP.rr: a file for the top predicted contacts in CASP format'
 	print '\tresult_dir: optional, saving the resultant images in this folder; default is current work directory'
     	exit(-1)

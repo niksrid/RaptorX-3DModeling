@@ -10,7 +10,7 @@ from AlignmentUtils import ReadAlignment, ExtractSeqFromAlignment
 from Common import PDBUtils
 
 def Usage():
-	print 'python2 EvaluateAlignmentQuality.py alnFile queryNativeFile templateNativeFile [savefolder]'
+	print 'python EvaluateAlignmentQuality.py alnFile queryNativeFile templateNativeFile [savefolder]'
 	print '	this script evaluates the quality of an alignment in terms of GDT and TMscore'
 	print '	alnFile: the pairwise alignment file, in which template is usually placed before query'
 	print '	queryNativeFile: the file containing the Ca coordinates of query, e.g., a PDB file'

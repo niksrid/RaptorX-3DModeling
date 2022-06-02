@@ -113,7 +113,7 @@ def ExtractSeqFromHHM(hhmfile):
 ## for test only
 if __name__ == "__main__":
 	if len(sys.argv) < 2:
-		print 'python2 ExtractSeqFromHHM.py hhm_file'
+		print 'python ExtractSeqFromHHM.py hhm_file'
 		print '	the input file shall end with .hhm'
 		exit(1)
 

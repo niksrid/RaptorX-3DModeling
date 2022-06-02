@@ -45,8 +45,8 @@ do
                 numRunningJobs=`ps -x | grep ${keywords} | wc -l`
                 if [ $numRunningJobs -lt `expr $numAllowedJobs + 1 ` ]; then
                         #$program $SeqDir/$target.fasta $ResDir $MSAmode &
-			python2 $reduceProgram -s $resultDir $resultDir/${target}.predictedDistMatrix.pkl & 
-			python2 $reduceProgram -r CbCb_Discrete12C -s $resultDir $resultDir/${target}.predictedDistMatrix.pkl &
+			python $reduceProgram -s $resultDir $resultDir/${target}.predictedDistMatrix.pkl & 
+			python $reduceProgram -r CbCb_Discrete12C -s $resultDir $resultDir/${target}.predictedDistMatrix.pkl &
                         break
                 else
                         a=`expr $RANDOM % 3 `

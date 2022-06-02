@@ -24,6 +24,6 @@ do
 
 	for modelFolder in $MetaFolder/${target}-*
 	do
-		python2 $program -s ${target}-Spicker -c $cutoff $seqFile $modelFolder &
+		python $program -s ${target}-Spicker -c $cutoff $seqFile $modelFolder &
 	done
 done

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """Convert .pkl file created by deep learning to .epad_prob
 Copyright

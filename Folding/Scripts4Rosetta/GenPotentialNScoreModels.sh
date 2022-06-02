@@ -50,7 +50,7 @@ fi
 program=$DistanceFoldingHome/Scripts4Rosetta/ScoreModels.py
 
 savefile=$target.score
-python2 $program $inFolder $cstfile $savefile
+python $program $inFolder $cstfile $savefile
 
 if [ "$propertyFile" != "cst" ]; then
         rm -rf $cstfolder

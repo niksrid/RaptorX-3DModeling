@@ -21,7 +21,7 @@ DistDirPrefix="/mnt/data/CASP13/PredictedDistMatrix/"
 AngleDirPrefix="/mnt/data/CASP13/PredictedProperties/"
 
 def Usage():
-	print 'python2 GenMultiTemplateRestraint4CASP13.py targetName Top20/Top40 template1 template2 ... '
+	print 'python GenMultiTemplateRestraint4CASP13.py targetName Top20/Top40 template1 template2 ... '
 	
 
 def GenRestraintFile4OneTarget(target, templates, model="Top20"):
@@ -38,12 +38,12 @@ def GenRestraintFile4OneTarget(target, templates, model="Top20"):
 	DistDir = os.path.join(DistDirPrefix, DistDir)
 	AngleDir = os.path.join(AngleDirPrefix, AngleDir)
 
-	cmd = ['python2', os.path.join(os.environ['ModelingHome'],'DL4DistancePrediction2/TPLMergePredictedDistMatrix.py')]
+	cmd = ['python', os.path.join(os.environ['ModelingHome'],'DL4DistancePrediction2/TPLMergePredictedDistMatrix.py')]
 	for temp in templates:
 		cmd.append(os.path.join(DistDir, target+'-'+temp+'.predictedDistMatrix.pkl'))
 	call(cmd)
 
-	cmd = ['python2', os.path.join(os.environ['ModelingHome'],'DL4PropertyPrediction/TPLMergePredictedProperties.py')]
+	cmd = ['python', os.path.join(os.environ['ModelingHome'],'DL4PropertyPrediction/TPLMergePredictedProperties.py')]
 	for temp in templates:
 		cmd.append(os.path.join(AngleDir, target+'-'+temp+'.predictedProperties.pkl'))
 	call(cmd)

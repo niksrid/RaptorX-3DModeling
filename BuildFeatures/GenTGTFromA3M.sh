@@ -44,7 +44,7 @@ numLines=`wc -l $a3mfile | cut -f1 -d' '`
 if [ $numLines -gt 80000 ]; then
 	echo "WARNING: converting A3M to TGT by sampling 40000 seqs from $a3mfile"
 	a3mfile2=$ResDir/$relnam.a3m.sampled
-	python2 $DistFeatureHome/Helpers/SampleA3MByNumber.py $a3mfile 40000 $a3mfile2
+	python $DistFeatureHome/Helpers/SampleA3MByNumber.py $a3mfile 40000 $a3mfile2
         $DistFeatureHome/util/A3M_To_TGT -i $fastafile -I $a3mfile2 -o $tgtfile -t $tmp 1> $relnam.ws1 2> $relnam.ws2
 else
         $DistFeatureHome/util/A3M_To_TGT -i $fastafile -I $a3mfile -o $tgtfile -t $tmp 1> $relnam.ws1 2> $relnam.ws2

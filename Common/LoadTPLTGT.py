@@ -12,7 +12,7 @@ from LoadHHM import load_hhm as LoadHHM
 
 """
 This script reads in a tpl or tgt file. The tpl and tgt files contain both obsolete and useful data, so we have to be very careful in using them.
-Each protein is stored as a python2 dict().
+Each protein is stored as a python dict().
 To use the position-specfic frequency matrix, please use the keyword PSFM.
 To use the position-specific scoring matrix, please use the keyword PSSM.
 Both PSFM and PSSM actually encode information derived from the profile HMM built by HHpred or HHblits,
@@ -414,7 +414,7 @@ def load_hhm(hhmfile):
 ## mainly for test
 if __name__ == "__main__":
 	if len(sys.argv) < 2:
-		print 'python2 LoadTPLTGT.py tpl_file or tgt_file or hhm_file'
+		print 'python LoadTPLTGT.py tpl_file or tgt_file or hhm_file'
 		print '	the input file shall end with .tgt, .tpl. or .hhm'
 		exit(1)
 

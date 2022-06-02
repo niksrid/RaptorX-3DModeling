@@ -8,7 +8,7 @@ from ContactUtils import LoadContactMatrix
 if __name__ == "__main__":
 
 	if len(sys.argv) < 3:
-    		print 'python2 EvaluateContactAccuracyTXT.py predContactMatrixFile_txt nativeContactMatrixFile_txt [targetName]'
+    		print 'python EvaluateContactAccuracyTXT.py predContactMatrixFile_txt nativeContactMatrixFile_txt [targetName]'
 		print '	This script evaluates the accuracy of a predicted contact matrix by comparing it with native contact matrix'
 		print '	Both matrix files are in text format with L lines and each line has L columns where L is the protein sequence length'
     		exit(1)

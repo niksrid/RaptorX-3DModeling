@@ -114,20 +114,20 @@ i=0
 while [ $i -lt $numModels ];
 do
 	if [ $runningMode -eq 2 ]; then
-        	python2 $program $inFile $cstfile -e 1.5 -s $savefolder
+        	python $program $inFile $cstfile -e 1.5 -s $savefolder
 
 	elif [ $runningMode -eq 1 ]; then
 		if $UsePerturbation; then
-        		python2 $program $inFile $cstfile -e 1.5 -s $savefolder -p
+        		python $program $inFile $cstfile -e 1.5 -s $savefolder -p
 		else
-        		python2 $program $inFile $cstfile -e 1.5 -s $savefolder
+        		python $program $inFile $cstfile -e 1.5 -s $savefolder
 		fi
 
 	elif [ $runningMode -eq 0 ]; then
 		if $UsePerturbation; then
-        		python2 $program $inFile $cstfile -s $savefolder -q -p
+        		python $program $inFile $cstfile -s $savefolder -q -p
 		else
-        		python2 $program $inFile $cstfile -s $savefolder -q
+        		python $program $inFile $cstfile -s $savefolder -q
 		fi
 	else
 		echo "ERROR: incorrect running mode specified"

@@ -21,7 +21,7 @@ def str_display(ls):
         return str_ls2
 
 def Usage():
-	print 'python2 MergeRWRefState.py refState1 refState2 refState3 ...'
+	print 'python MergeRWRefState.py refState1 refState2 refState3 ...'
 
 def ReduceBins(refState, bins):
 	assert bins[0] == 0

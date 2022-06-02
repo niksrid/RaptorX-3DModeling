@@ -16,7 +16,7 @@ do
 	for j in $i/T*quality*sorted
 	do
 		if [ -s $j ]; then
-			python2 $cmdDir/FindBest.py $j
+			python $cmdDir/FindBest.py $j
 		fi
 	done
 done

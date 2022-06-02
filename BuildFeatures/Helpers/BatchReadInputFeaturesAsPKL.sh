@@ -45,7 +45,7 @@ do
                 ## check the number of running jobs
                 numRunningJobs=`ps -x | grep ${keywords} | grep -v $myself | wc -l`
                 if [ $numRunningJobs -lt $numAllowedJobs  ]; then
-			python2 $program $target $inputFolder/feat_${target}_contact $savefolder & 
+			python $program $target $inputFolder/feat_${target}_contact $savefolder & 
                         break
                 else
                         a=`expr $RANDOM % 3 `

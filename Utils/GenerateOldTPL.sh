@@ -73,7 +73,7 @@ removePDBFile=0
 if [[ "$fulnam" == *.cif ]]; then
 	bname=${fulnam%.cif}
 	pdbFile=$ResultDir/${bname}.pdb
-	python2 $ModelingHome/Common/CIF2PDB.py $structFile $pdbFile
+	python $ModelingHome/Common/CIF2PDB.py $structFile $pdbFile
 	removePDBFile=1
 
 elif [[ "$fulnam" == *.pdb ]]; then

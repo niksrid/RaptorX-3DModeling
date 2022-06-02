@@ -11,7 +11,7 @@ from config import Response2LabelName, Response2LabelType
 import getopt
 
 def Usage():
-    	print 'python2 CalcEmpiricalRefState.py -y response -D trainData -s minibatchSize -k keyword_value'
+    	print 'python CalcEmpiricalRefState.py -y response -D trainData -s minibatchSize -k keyword_value'
 	print '	-y: specify responses, e.g., CaCa+CbCb+CgCg:25C:2;Beta:2C:1. Several responses are separated by semicolon. Each response consists of response names, response label type and optionally weight factor separated by :. '
 	print '    When several response names have the same label type and weight factor, you may separate them by + '
 	print '    Response names can be atom pair types such as  CaCa, CbCb, NO, CgCg, CaCg and All where All includes all of them'

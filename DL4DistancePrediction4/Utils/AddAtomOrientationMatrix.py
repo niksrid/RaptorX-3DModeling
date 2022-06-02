@@ -6,10 +6,10 @@ import cPickle
 
 """
 This script merges distance prediction input features with atom orientation matrices to form a new train/valid/test dataset for orientation prediction
-Usage: python2 AddAtomOrientationMatrix.py distanceFeatures_PKL atomOrientationMatrixPKL_folder
+Usage: python AddAtomOrientationMatrix.py distanceFeatures_PKL atomOrientationMatrixPKL_folder
 """
 if len(sys.argv)<3:
-	print 'python2 AddAtomOrientationMatrix.py distanceFeatures_PKL atomOrientationMatrixPKL_folder'
+	print 'python AddAtomOrientationMatrix.py distanceFeatures_PKL atomOrientationMatrixPKL_folder'
 	print '       distanceFeautres_PKL is a PKL file containing a list of input features for distance/orientation prediction'
 	print '       atomOrientationMatrixPKL_folder is a folder containing the true orientation matrices of all the proteins in distanceFeatures_PKL'
 	exit(1)

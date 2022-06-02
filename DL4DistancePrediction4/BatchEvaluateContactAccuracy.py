@@ -8,12 +8,12 @@ import ContactUtils
 from utilsNoT import str_display
 
 def Usage():
-    	print 'python2 BatchEvaluateContactAccuracy.py poteinListFile PKL_folder ground_truth_folder [fileSuffix]'
+    	print 'python BatchEvaluateContactAccuracy.py poteinListFile PKL_folder ground_truth_folder [fileSuffix]'
 	print '\tThis script evaluates contact prediction accuracy for a list of proteins in their predicted dist or contact matrix files'
 	print '\tproteinListFile: a file for a list of proteins, each in one row'
     	print '\tPKL_folder: a folder containing predicted distance/orientation matrix files ending with .predictedDistMatrix.pkl'
     	print '\t\tA predicted distance matrix file contains a tuple of at least 6 items: name, sequence, predicted distance prob matrix, predicted contact prob matrix, labelWeights, labelDistribution'
-	print '\t\tMeanwhile, predicted distance prob matrix and predicted contact prob matrix are python2 dict()'
+	print '\t\tMeanwhile, predicted distance prob matrix and predicted contact prob matrix are python dict()'
 	print '\tground_truth_folder: folder for native distance/orientation matrix files'
     	print '\tfileSuffix: suffix for native dist/contact matrix file: .atomDistMatrix.pkl or .native.pkl (default)'
 	print '\t\tThe suffix represents a specific format'

@@ -12,7 +12,7 @@ import DistanceUtils
 import getopt
 
 def Usage():
-    	print 'python2 EvaluateDistanceAccuracy.py predictedDistMatrix_PKL ground_truth_PKL [-s minSeqSep ] [-c distCutoff for prediction] [ -d distCutoff for native]'
+    	print 'python EvaluateDistanceAccuracy.py predictedDistMatrix_PKL ground_truth_PKL [-s minSeqSep ] [-c distCutoff for prediction] [ -d distCutoff for native]'
 	print '  This script evaluate distance bound accuracy for a protein with its predicted distance/orientation matrix file '
     	print '  predictedDistMatrixPKL: a predicted distance matrix file with name like XXX.predictedDistMatrix.pkl'
     	print '     This file contains a tuple of at least 4 items: name, primary sequence, predictedDistMatrix, predictedContactMatrix'

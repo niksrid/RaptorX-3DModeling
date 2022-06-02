@@ -5,7 +5,7 @@ from AlignmentUtils import ParseAlignmentFile
 
 if __name__ == '__main__':
         if len(sys.argv) < 2:
-                print 'python2 ParseAlignmentFile.py alnFile [savefolder]'
+                print 'python ParseAlignmentFile.py alnFile [savefolder]'
                 exit(1)
 
         alnFile = sys.argv[1]

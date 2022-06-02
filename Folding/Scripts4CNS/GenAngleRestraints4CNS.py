@@ -10,7 +10,7 @@ import PropertyUtils
 from utils import LoadFASTAFile
 
 def Usage():
-	print 'python2 GenAngleRestraints4CNS.py [-k energy_constant ] seq_file_in_FASTA predictedProperties_in_PKL\n'
+	print 'python GenAngleRestraints4CNS.py [-k energy_constant ] seq_file_in_FASTA predictedProperties_in_PKL\n'
 	print ' -k: energy constant for backbone dihedral torsion angle restraint, default 5.0'
 
 

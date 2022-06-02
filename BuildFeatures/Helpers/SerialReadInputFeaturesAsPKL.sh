@@ -26,6 +26,6 @@ program=$DL4DistancePredHome/ReadSingleInputFeature.py
 
 for i in `cat $proteinFile`
 do
-	python2 $program $i $inputFolder/feat_${i}_contact/
+	python $program $i $inputFolder/feat_${i}_contact/
 	mv $i.inputFeatures.pkl ${ResDir}/
 done

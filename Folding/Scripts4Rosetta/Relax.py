@@ -14,7 +14,7 @@ from pyrosetta.rosetta import *
 from FoldNRelax import Relax, RelaxWithoutConstraints, CheckCSTFile, DeriveRosettaCSTFile, ReadFASTAFile
 
 def Usage():
-	print 'python2 Relax.py inputFile cstFile [-r ncycles] [-I extraInput ] [ -d weight4dihedral ] [ -w weight4distance ] [ -a weight4angle] [-e weight4beta] [ -n nrepeats] [-s savefolder]  '
+	print 'python Relax.py inputFile cstFile [-r ncycles] [-I extraInput ] [ -d weight4dihedral ] [ -w weight4distance ] [ -a weight4angle] [-e weight4beta] [ -n nrepeats] [-s savefolder]  '
 	print '       inputFile: a file with name ending with .pdb'
 	print '       cstFile: the constraint file including all kinds of constraints acceptable by Rosetta'
   	print '       -I: when this option specified, cstFile shall be interpreted as the predicted dist/orientation matrix file instead of Rosetta constraint file'

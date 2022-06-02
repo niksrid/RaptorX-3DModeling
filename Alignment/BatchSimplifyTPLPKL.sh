@@ -33,5 +33,5 @@ mkdir -p $outDir
 
 for i in `cat $listFile `
 do
-	python2 $program $inDir/${i}.tpl.pkl $outDir
+	python $program $inDir/${i}.tpl.pkl $outDir
 done

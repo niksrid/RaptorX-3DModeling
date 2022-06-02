@@ -21,7 +21,7 @@ import Model4PropertyPrediction
 import getopt
 
 def Usage():
-    	print 'python2 RunBatchPropertyPredictor.py -m modelfiles -p proteinList -i inputFolder [-d save_folder] [-g ground_truth_folder]'
+    	print 'python RunBatchPropertyPredictor.py -m modelfiles -p proteinList -i inputFolder [-d save_folder] [-g ground_truth_folder]'
     	print '-m: specify one or multiple model files in PKL format, separated by semicolon'
     	print '-p: a file containing a list of proteins, each in one line'
 	print '-i: a folder containing the input features of all proteins in the list file, each file ending with .propertyFeatures.pkl'

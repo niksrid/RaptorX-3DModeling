@@ -99,7 +99,7 @@ def GetCompilationInfoForFile( filename ):
 def FlagsForFile( filename, **kwargs ):
   if database:
     # Bear in mind that compilation_info.compiler_flags_ does NOT return a
-    # python2 list, but a "list-like" StringVec object
+    # python list, but a "list-like" StringVec object
     compilation_info = GetCompilationInfoForFile( filename )
     if not compilation_info:
       return None

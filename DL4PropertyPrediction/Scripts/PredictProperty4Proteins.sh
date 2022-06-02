@@ -105,8 +105,8 @@ if [ $ModelFiles == "" ]; then
         exit 1
 fi
 
-#THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python2 $program -p $proteinListFile -i $inputFolder -m $ModelFiles -d $ResultDir 
-THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python2 $program -p $proteinListFile -i $ResultDir -m $ModelFiles -d $ResultDir 
+#THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python $program -p $proteinListFile -i $inputFolder -m $ModelFiles -d $ResultDir 
+THEANO_FLAGS=blas.ldflags=,device=$GPU,floatX=float32,dnn.include_path=${CUDA_ROOT}/include,dnn.library_path=${CUDA_ROOT}/lib64 python $program -p $proteinListFile -i $ResultDir -m $ModelFiles -d $ResultDir 
 if [ $? -ne 0 ]; then
 	echo "ERROR: failed to run property prediction for $proteinListFile with $inputFolder using $ModelName"
 	exit 1

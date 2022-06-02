@@ -96,9 +96,9 @@ do
 			echo "ERROR: failed to run $DistanceFoldingHome/Scripts4Rosetta/ExtractScoreFromRelaxedModels.sh $modelFolder $scorefile"
 			exit 1
 		fi
-		python2 $DistanceFoldingHome/Scripts4Rosetta/SelectModels4Clustering.py $scorefile >> $modelListFile
+		python $DistanceFoldingHome/Scripts4Rosetta/SelectModels4Clustering.py $scorefile >> $modelListFile
 		if [ $? -ne 0 ]; then
-			echo "ERROR: failed to run python2 $DistanceFoldingHome/Scripts4Rosetta/SelectModels4Clustering.py $scorefile >> $modelListFile"
+			echo "ERROR: failed to run python $DistanceFoldingHome/Scripts4Rosetta/SelectModels4Clustering.py $scorefile >> $modelListFile"
 			exit 1
 		fi
 	else
@@ -106,9 +106,9 @@ do
 	fi
 done
 
-python2 $program -l -s $savefolder $seqFile $modelListFile
+python $program -l -s $savefolder $seqFile $modelListFile
 if [ $? -ne 0 ]; then
-	echo "ERROR: failed to run python2 $program -l -s $savefolder $seqFile $modelListFile"
+	echo "ERROR: failed to run python $program -l -s $savefolder $seqFile $modelListFile"
 	exit 1
 fi
 
@@ -119,9 +119,9 @@ cd $currDir
 
 ## parse clustering result
 name=`basename $savefolder -SpickerResults`
-python2 $cmdDir/ParseSpickerResult.py $name $savefolder
+python $cmdDir/ParseSpickerResult.py $name $savefolder
 if [ $? -ne 0 ]; then
-	echo "ERROR: failed to run python2 $cmdDir/ParseSpickerResult.py $name $savefolder"
+	echo "ERROR: failed to run python $cmdDir/ParseSpickerResult.py $name $savefolder"
 	exit 1
 fi
 

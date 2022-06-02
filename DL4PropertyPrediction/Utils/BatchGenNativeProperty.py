@@ -5,7 +5,7 @@ import cPickle
 from GenNativeProperty import LoadTrainData4Properties
 
 def Usage():
-        print 'python2 BatchGenNativeProperty.py proteinList tplpklDir/nativeDir'
+        print 'python BatchGenNativeProperty.py proteinList tplpklDir/nativeDir'
         print '	tplpklDir: the folder for tpl.pkl files or native.pkl files'
 
 def main(argv):

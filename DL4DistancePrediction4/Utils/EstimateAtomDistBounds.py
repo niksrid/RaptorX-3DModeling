@@ -220,7 +220,7 @@ def EstimateDistanceBounds(predictedMatrix):
 	return bounds
 
 def Usage():
-    	print 'python2 EstimateAtomDistBounds.py pkl_file [anything] '
+    	print 'python EstimateAtomDistBounds.py pkl_file [anything] '
     	print '	pkl_file: the input file, which is usually has suffix .predictedDistMatrix.pkl or .mergedDistMatrix.pkl '
     	print ' 	This file contains a tuple of at least 3 items: name, primary sequence, predicted dist prob matrix'
 	print '		the Cb-Cb distance bound will be saved to a file XXX.bound.txt where XXX is the protein name'

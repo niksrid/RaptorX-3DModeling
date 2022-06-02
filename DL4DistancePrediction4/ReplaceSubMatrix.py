@@ -16,7 +16,7 @@ from copy import deepcopy
 ## this script can also be used to mix template-based distance prediction (for some domains with good templates) and template-free distance prediction (for domains without good templates)
 
 def Usage():
-	print 'python2 ReplaceSubMatrix.py [ -s savefolder | -n name ] baseMatrixFile subMatrixFiles'
+	print 'python ReplaceSubMatrix.py [ -s savefolder | -n name ] baseMatrixFile subMatrixFiles'
 	print '	This script replaces a dist/ori submatrix of a multi-domain protein by another one'
 	print '	It can also be used to mix template-based distance/ori prediction (for domains with good templates) and template-free distance prediction (for domains without good templates)'
 	print '	baseMatrixFile: the whole-chain matrix file ending with .predictedDistMatrix.pkl'

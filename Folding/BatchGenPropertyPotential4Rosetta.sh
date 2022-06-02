@@ -25,5 +25,5 @@ program=$cmdDir/GenPropertyPotential4Rosetta.py
 
 for i in `cat $proteinListFile`
 do
-	python2 $program -s $saveFolder $inputFolder/${i}.predictedProperties.pkl
+	python $program -s $saveFolder $inputFolder/${i}.predictedProperties.pkl
 done

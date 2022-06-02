@@ -8,7 +8,7 @@ import ContactUtils
 ##this script ranks all predictions of the same protein by the sum of top predicted contact probabilities 
 
 def Usage():
-	print "python2 BatchRankPredictionsByTopProb.py proteinList ResDir predFolder1 predFolder2 predFolder3 ..."
+	print "python BatchRankPredictionsByTopProb.py proteinList ResDir predFolder1 predFolder2 predFolder3 ..."
 	print "		this script ranks the predictedDistMatrix of all proteins in the proteinList by top contact probability"
 	print "		each folder contains predictions of all proteins generated under one setting"
 	print "		each predFile ends with .predictedDistMatrix.pkl"

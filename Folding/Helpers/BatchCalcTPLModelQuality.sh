@@ -66,14 +66,14 @@ do
 			echo "the model file does not exist: " $model
 			#exit -1
 		else
-			scores=`DeepScore $model $native | python2 scripts/CollectModelQuality.py`
+			scores=`DeepScore $model $native | python scripts/CollectModelQuality.py`
 			echo $scores $model >> $scorefile
 		fi
 
 	done
 
 	if [ -s $scorefile ]; then
-		python2 scripts/AnalyzeDeepScore.py $scorefile >> $resultfile
+		python scripts/AnalyzeDeepScore.py $scorefile >> $resultfile
 	fi
 
 	rm -f $scorefile

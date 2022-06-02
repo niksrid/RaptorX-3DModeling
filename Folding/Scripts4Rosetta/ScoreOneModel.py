@@ -10,7 +10,7 @@ from pyrosetta.rosetta import *
 from FoldNRelax import CheckCSTFile
 
 def Usage():
-	print 'python2 ScoreOneModel.py inputFile cstFile'
+	print 'python ScoreOneModel.py inputFile cstFile'
 	print '       inputFile: a PDB file ending with .pdb'
 	print '       cstFile: a constraint file including all kinds of constraints acceptable by Rosetta'
 

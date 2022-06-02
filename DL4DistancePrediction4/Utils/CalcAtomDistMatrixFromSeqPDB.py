@@ -22,7 +22,7 @@ from SelectAtoms import SelectAtoms4Distance
 ## seq file may be inconsistent with PDB file, but we will calculate the distance matrix based upon seq file by extracting coordinates from PDB file
 
 def Usage():
-	print 'python2 CalcAtomDistMatrixFromSeqPDB.py seq_file_in_FASTA pdb_file [AtomPairTypes]'
+	print 'python CalcAtomDistMatrixFromSeqPDB.py seq_file_in_FASTA pdb_file [AtomPairTypes]'
 	print '	  this script calculates the atomic distance matrix from sequence and PDB files'
 	print '   AtomPairTypesied: the atom pairs to be used, default All'
 
